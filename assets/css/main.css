@@ -764,7 +764,7 @@ html[data-brand="pervaz"] .preview { border-radius: 999px 999px var(--radius) va
 .phero__grid { display: grid; gap: 48px; }
 .phero__greet { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); }
 .phero__greet::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 4px rgba(191, 116, 36, .18); }
-.phero__title { margin: 22px 0 28px; font-size: clamp(46px, 7.4vw, 136px); line-height: .95; }
+.phero__title { margin: 22px 0 28px; font-size: clamp(46px, 6.9vw, 136px); line-height: .95; }
 .phero__title > span, .phero__title .hl-mask { display: block; }
 .phero__lead { max-width: 44ch; margin: 0 0 32px; font-size: clamp(17px, 1.3vw, 20px); color: var(--ink-2); }
 .phero__actions { display: flex; flex-wrap: wrap; gap: 12px; }
