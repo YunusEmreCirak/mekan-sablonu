@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="tr" data-brand="lodos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lodos — Moda'da deniz, ateş ve mevsim</title>
+<meta name="description" content="Moda'da meze, deniz ürünleri ve meşe kömüründe pişen mevsim yemekleri. Dijital menü, alerjen filtresi ve rezervasyon talebi içeren restoran şablonu.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e1311">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lodos — Moda'da deniz, ateş ve mevsim">
+<meta property="og:description" content="Restoran web sitesi şablonu: dijital menü, alerjen ve kalori bilgisi, rezervasyon talebi.">
+<meta property="og:image" content="https://yunusemrecirak.github.io/mekan-sablonu/assets/img/lodos/hero-still-1600.webp">
+<meta property="og:url" content="https://yunusemrecirak.github.io/mekan-sablonu/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230e1311'/%3E%3Ccircle cx='20' cy='20' r='13' fill='none' stroke='%23ece4d3' stroke-width='1.6'/%3E%3Cpath d='M28 12 21.6 21.6 18.4 18.4Z' fill='%23d2683c'/%3E%3Cpath d='M12 28 21.6 21.6 18.4 18.4Z' fill='%23ece4d3'/%3E%3C/svg%3E">
+<link rel="preload" href="./assets/fonts/bodoni-moda-normal-400_900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/hanken-grotesk-normal-100_900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/fonts/fonts.css">
+<link rel="stylesheet" href="./assets/css/main.css">
+<script>(function(d){var h=d.documentElement;h.classList.add('js');try{var q=new URLSearchParams(location.search).has('masa'),s=sessionStorage.getItem('intro-lodos'),r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!q&&!s&&!r)h.classList.add('intro');if(q)h.classList.add('is-table')}catch(e){}})(document)</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Lodos", "url": "https://yunusemrecirak.github.io/mekan-sablonu/", "address": {"@type": "PostalAddress", "streetAddress": "Caferağa Mahallesi, Moda", "addressLocality": "Kadıköy", "addressRegion": "İstanbul", "addressCountry": "TR"}, "servesCuisine": ["Türk", "Deniz ürünleri", "Meze"], "priceRange": "₺₺", "acceptsReservations": true, "hasMenu": "https://yunusemrecirak.github.io/mekan-sablonu/#menu", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "13:00", "closes": "23:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "18:00", "closes": "00:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "18:00", "closes": "00:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "18:00", "closes": "00:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "18:00", "closes": "01:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "18:00", "closes": "01:30"}]}</script>
+<script type="application/json" id="config">{"brand": "lodos", "name": "Lodos", "hours": {"0": [[780, 1380]], "1": [], "2": [[1080, 1470]], "3": [[1080, 1470]], "4": [[1080, 1470]], "5": [[1080, 1530]], "6": [[1080, 1530]]}, "reserve": {"slot": 30, "lead": 90, "max": 12, "group": 7}, "wifi": {"ssid": "Lodos-Misafir", "pass": "lufer2026"}}</script>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+
+<div class="loader" data-loader aria-hidden="true">
+  <div class="loader__inner">
+    <svg class="loader__mark" viewBox="0 0 120 120">
+      <circle class="loader__ring" cx="60" cy="60" r="54" pathLength="1"/>
+      <path class="loader__tick" d="M60 2v12M60 106v12M2 60h12M106 60h12" pathLength="1"/>
+      <path class="loader__needle" d="M88 32 64.5 64.5 55.5 55.5Z"/>
+      <path class="loader__tail" d="M32 88 64.5 64.5 55.5 55.5Z"/>
+    </svg>
+    <p class="loader__word"><span>L</span><span>o</span><span>d</span><span>o</span><span>s</span></p>
+    <p class="loader__meta">Moda · Kadıköy · Güneybatıdan</p>
+  </div>
+</div>
+
+<header class="header" data-header>
+  <a class="brand" href="./" aria-label="Lodos, ana sayfa">
+    <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5"/><path class="brand__ticks" d="M20 1.5v3M20 35.5v3M1.5 20h3M35.5 20h3"/><g class="brand__needle"><path class="brand__n" d="M29 11 21.8 21.8 18.2 18.2Z"/><path class="brand__s" d="M11 29 21.8 21.8 18.2 18.2Z"/></g></svg>
+    <span class="brand__word">Lodos</span>
+  </a>
+  <nav class="nav" aria-label="Ana gezinme">
+    <a href="#menu">Menü</a>
+    <a href="#hikaye">Hikâye</a>
+    <a href="#mekan">Mekân</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <div class="header__end">
+    <p class="status" data-status><i aria-hidden="true"></i><span data-status-text>Saatler</span></p>
+    <a class="btn btn--line btn--small" href="#rezervasyon" data-magnetic><span>Masa ayırt</span></a>
+    <button class="burger" type="button" aria-label="Gezinme menüsünü aç" aria-expanded="false" aria-controls="mnav" data-nav-toggle><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" data-mobile-nav hidden>
+  <nav class="mnav__links" aria-label="Mobil gezinme">
+    <a href="#menu"><small>iv.</small>Menü</a>
+    <a href="#hikaye"><small>i.</small>Hikâye</a>
+    <a href="#ates"><small>iii.</small>Ateş</a>
+    <a href="#mekan"><small>vi.</small>Mekân</a>
+    <a href="#rezervasyon"><small>vii.</small>Rezervasyon</a>
+    <a href="#iletisim"><small>—</small>İletişim</a>
+  </nav>
+  <p class="mnav__foot"><span>Moda · Kadıköy</span><a href="./kafe/">Kafe şablonuna geç →</a></p>
+</div>
+
+<main id="icerik">
+
+  <section class="hero" data-tone="dark">
+    <picture class="hero__media" data-hero-media>
+      <source media="(max-width: 760px)" sizes="100vw" srcset="./assets/img/lodos/hero-grill-960.webp 960w, ./assets/img/lodos/hero-grill-1600.webp 1600w, ./assets/img/lodos/hero-grill-2400.webp 2400w" width="2400" height="3000">
+      <img alt="Karanlık ahşap masada taze çipuralar, limon, sarımsak ve maydanoz" sizes="100vw" loading="eager" fetchpriority="high" src="./assets/img/lodos/hero-still-1600.webp" srcset="./assets/img/lodos/hero-still-960.webp 960w, ./assets/img/lodos/hero-still-1600.webp 1600w, ./assets/img/lodos/hero-still-2400.webp 2400w" width="2400" height="1574" decoding="async">
+    </picture>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <svg class="wind" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-40 170C260 120 470 210 800 150S1260 90 1500 130" pathLength="1"/>
+      <path d="M-40 300C300 260 560 330 900 280S1300 230 1500 270" pathLength="1"/>
+      <path d="M-40 430C240 400 520 470 860 420S1290 370 1500 410" pathLength="1"/>
+    </svg>
+    <div class="hero__inner wrap">
+      <p class="eyebrow hero__eyebrow"><span>Moda — Kadıköy</span><span>Meze · deniz · ateş</span></p>
+      <h1 class="hero__title" data-hero-title>
+        <span>Rüzgâr güneybatıdan,</span>
+        <span>balık pazardan,</span>
+        <span>akşam <em>bizden.</em></span>
+      </h1>
+      <div class="hero__foot">
+        <p class="hero__lead">Lodos çıkınca tekneler limanda kalır; biz de mutfağa çekiliriz. Kadıköy pazarından o sabah ne geldiyse, akşam ateşte ve masada.</p>
+        <div class="hero__actions">
+          <a class="btn btn--accent" href="#rezervasyon" data-magnetic><span>Masa ayırt</span></a>
+          <a class="btn btn--ghost" href="#menu"><span>Menüyü gör</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="ticker" aria-label="Bugün tezgâhta: lüfer, palamut, hamsi, istavrit, Saros karidesi, ayva, bal kabağı">
+      <div class="ticker__track" aria-hidden="true">
+        <span class="ticker__label">Bugün tezgâhta</span><span>Lüfer</span><span>Palamut</span><span>Hamsi</span><span>İstavrit</span><span>Saros karidesi</span><span>Ayva</span><span>Bal kabağı</span><span>Pırasa</span>
+        <span class="ticker__label">Bugün tezgâhta</span><span>Lüfer</span><span>Palamut</span><span>Hamsi</span><span>İstavrit</span><span>Saros karidesi</span><span>Ayva</span><span>Bal kabağı</span><span>Pırasa</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="story section" id="hikaye" data-tone="dark">
+    <div class="wrap story__grid">
+      <header class="shead">
+        <span class="numeral">i.</span><span class="eyebrow">Hikâye</span>
+      </header>
+      <p class="story__big" data-words>Menü her sabah iskelede yeniden yazılır. Tezgâhta ne gördüysek, akşamın menüsü o.</p>
+      <div class="story__text">
+        <p>Lodos, Moda'nın arka sokaklarında yirmi iki kişilik tek bir masa olarak başladı. Pek büyümedik: on dört masa, bir kömür ocağı, uzun bir mermer tezgâh.</p>
+        <p>Her sabah yedide Kadıköy balık pazarındayız. Bu yüzden menünün altında tarih yazar ve bazı akşamlar bazı tabaklar erkenden biter. Bitince biter; dondurucumuz yok.</p>
+        <dl class="facts">
+          <div><dt>07.00</dt><dd>Pazara indiğimiz saat</dd></div>
+          <div><dt>14</dt><dd>Masa, on dördü de rezervasyonla</dd></div>
+          <div><dt>1</dt><dd>Meşe kömürü ocağı; hiç sönmez</dd></div>
+        </dl>
+      </div>
+      <figure class="story__fig story__fig--a">
+        <div class="frame" data-reveal><img alt="Balık tezgâhında, el yazısıyla 'Boğaz torik' yazan etiket" sizes="(min-width: 900px) 26vw, 64vw" data-speed="0.6" src="./assets/img/lodos/market-torik-960.webp" srcset="./assets/img/lodos/market-torik-480.webp 480w, ./assets/img/lodos/market-torik-960.webp 960w, ./assets/img/lodos/market-torik-1500.webp 1500w" width="1500" height="2250" loading="lazy" decoding="async"></div>
+        <figcaption>Kadıköy pazarı, 07.20 — Boğaz toriği.</figcaption>
+      </figure>
+      <figure class="story__fig story__fig--b">
+        <div class="frame" data-reveal><img alt="Buz üzerinde yan yana dizilmiş parlak uskumrular" sizes="(min-width: 900px) 38vw, 90vw" src="./assets/img/lodos/market-mackerel-1600.webp" srcset="./assets/img/lodos/market-mackerel-960.webp 960w, ./assets/img/lodos/market-mackerel-1600.webp 1600w, ./assets/img/lodos/market-mackerel-2200.webp 2200w" width="2200" height="3300" loading="lazy" decoding="async"></div>
+        <figcaption>Uskumru, istavrit, hamsi: kasımın balıkları.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sig" id="imzalar" data-hscroll data-tone="dark">
+    <div class="sig__pin">
+      <div class="sig__intro wrap">
+        <header class="shead"><span class="numeral">ii.</span><span class="eyebrow">Akşamın imzaları</span></header>
+        <h2 class="display-l" data-split>Masaların en çok <em>sorduğu</em> beş tabak.</h2>
+        <p class="sig__hint" aria-hidden="true"><span>Kaydırın</span><i></i></p>
+      </div>
+      <div class="sig__track" data-hscroll-track>
+        <article class="sigcard">
+          <div class="sigcard__media"><img alt="Roka ve limonla servis edilen ızgara ahtapot" sizes="(min-width: 900px) 30vw, 78vw" src="./assets/img/lodos/d-octopus-960.webp" srcset="./assets/img/lodos/d-octopus-480.webp 480w, ./assets/img/lodos/d-octopus-960.webp 960w, ./assets/img/lodos/d-octopus-1500.webp 1500w" width="1500" height="2250" loading="lazy" decoding="async"></div>
+          <div class="sigcard__body"><span class="sigcard__no">01</span><h3 class="sigcard__name">Izgara ahtapot, <em>fava</em></h3><p>Ahtapot kolu, sarı fava, kapari, kırmızı soğan turşusu. Kömürde, acele etmeden.</p><span class="sigcard__price">920 ₺</span></div>
+        </article>
+        <article class="sigcard">
+          <div class="sigcard__media"><img alt="Koyu tabakta, sebzelerle servis edilen kuzu incik" sizes="(min-width: 900px) 30vw, 78vw" src="./assets/img/lodos/d-lamb-shank-960.webp" srcset="./assets/img/lodos/d-lamb-shank-480.webp 480w, ./assets/img/lodos/d-lamb-shank-960.webp 960w, ./assets/img/lodos/d-lamb-shank-1500.webp 1500w" width="1500" height="997" loading="lazy" decoding="async"></div>
+          <div class="sigcard__body"><span class="sigcard__no">02</span><h3 class="sigcard__name">Kuzu incik, <em>keşkek</em></h3><p>Altı saat kısık ateş, aşurelik buğday, kekikli et suyu. Kaşıkla ayrılır.</p><span class="sigcard__price">1.150 ₺</span></div>
+        </article>
+        <article class="sigcard">
+          <div class="sigcard__media"><img alt="Közde kabuğu kararmış patlıcanlar" sizes="(min-width: 900px) 30vw, 78vw" src="./assets/img/lodos/d-eggplant-960.webp" srcset="./assets/img/lodos/d-eggplant-480.webp 480w, ./assets/img/lodos/d-eggplant-960.webp 960w, ./assets/img/lodos/d-eggplant-1500.webp 1500w" width="1500" height="996" loading="lazy" decoding="async"></div>
+          <div class="sigcard__body"><span class="sigcard__no">03</span><h3 class="sigcard__name">Közlenmiş patlıcan, <em>tahin</em></h3><p>Kabuğu kömürde kararana kadar. Nar ekşisi, kavrulmuş susam, bolca maydanoz.</p><span class="sigcard__price">290 ₺</span></div>
+        </article>
+        <article class="sigcard">
+          <div class="sigcard__media"><img alt="Karanlık zeminde dilimlenmiş bal kabağı" sizes="(min-width: 900px) 30vw, 78vw" src="./assets/img/lodos/d-pumpkin-960.webp" srcset="./assets/img/lodos/d-pumpkin-480.webp 480w, ./assets/img/lodos/d-pumpkin-960.webp 960w, ./assets/img/lodos/d-pumpkin-1500.webp 1500w" width="1500" height="1875" loading="lazy" decoding="async"></div>
+          <div class="sigcard__body"><span class="sigcard__no">04</span><h3 class="sigcard__name">Bal kabağı, <em>tulum</em></h3><p>Közde bal kabağı, Erzincan tulumu, kavrulmuş fındık ve kızarmış adaçayı.</p><span class="sigcard__price">420 ₺</span></div>
+        </article>
+        <article class="sigcard">
+          <div class="sigcard__media"><img alt="Tabağın yanında olgun sarı ayvalar" sizes="(min-width: 900px) 30vw, 78vw" src="./assets/img/lodos/d-quince-960.webp" srcset="./assets/img/lodos/d-quince-480.webp 480w, ./assets/img/lodos/d-quince-960.webp 960w, ./assets/img/lodos/d-quince-1500.webp 1500w" width="1500" height="1000" loading="lazy" decoding="async"></div>
+          <div class="sigcard__body"><span class="sigcard__no">05</span><h3 class="sigcard__name">Ayva tatlısı, <em>kaymak</em></h3><p>Karanfille fırınlanmış ayva, Afyon kaymağı, Antep fıstığı. Yalnızca sonbaharda.</p><span class="sigcard__price">420 ₺</span></div>
+        </article>
+        <a class="sigcard sigcard--end" href="#menu">
+          <span class="sigcard__no">06 — 33</span>
+          <span class="sigcard__endtitle">Menünün <em>tamamı</em></span>
+          <span class="sigcard__arrow" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 38 38 10M16 10h22v22"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="fire" id="ates" data-tone="dark">
+    <div class="fire__bg" aria-hidden="true"><img alt="" sizes="100vw" data-zoom src="./assets/img/lodos/embers-1600.webp" srcset="./assets/img/lodos/embers-960.webp 960w, ./assets/img/lodos/embers-1600.webp 1600w, ./assets/img/lodos/embers-2200.webp 2200w" width="2200" height="1469" loading="lazy" decoding="async"></div>
+    <div class="wrap fire__inner">
+      <header class="shead"><span class="numeral">iii.</span><span class="eyebrow">Ateş</span></header>
+      <h2 class="fire__title" data-split>Ocak <em>19.30'da</em> kızarır.</h2>
+      <div class="fire__cols">
+        <p class="fire__text">Kömürümüz meşe, ızgaramız dökme demir. Balık, ahtapot, kuzu; hepsi aynı ocağın başından geçer. Ateşi aceleye getirmeyiz, o yüzden bazı tabaklar biraz bekletir. Beklediğinize değsin diye.</p>
+        <figure class="fire__fig">
+          <div class="frame" data-reveal><img alt="Kızgın kömür üzerinde ızgarada pişen ahtapot" sizes="(min-width: 900px) 26vw, 70vw" src="./assets/img/lodos/octo-grill-960.webp" srcset="./assets/img/lodos/octo-grill-480.webp 480w, ./assets/img/lodos/octo-grill-960.webp 960w, ./assets/img/lodos/octo-grill-1500.webp 1500w" width="1500" height="2666" loading="lazy" decoding="async"></div>
+          <figcaption>Ahtapot, ikinci çevirişte.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu" data-menu data-tone="light" aria-labelledby="menu-title">
+    <div class="menu__bg" aria-hidden="true"></div>
+    <div class="menu__inner">
+      <header class="menu__head wrap">
+        <div class="menu__titles">
+          <header class="shead"><span class="numeral">iv.</span><span class="eyebrow">Menü</span></header>
+          <h2 class="display-l" id="menu-title"><span data-en="The autumn menu">Sonbahar menüsü</span></h2>
+        </div>
+        <div class="menu__meta">
+          <p class="mono"><span data-en="November 2026 · last updated 2 Nov, 11.40">Kasım 2026 · son güncelleme 2 Kasım, 11.40</span></p>
+          <p class="menu__legal" data-en="Prices are in Turkish lira and include VAT. No service, cover or table charge. Calories are per portion; allergens are listed under every dish.">Fiyatlarımız Türk lirası cinsindendir ve KDV dahildir. Servis, kuver ya da masa ücreti alınmaz. Kalori değerleri porsiyon başınadır; alerjenler her tabağın altında yazar.</p>
+        </div>
+      </header>
+
+      <div class="menubar" data-menubar>
+        <div class="menubar__inner wrap">
+          <nav class="menubar__cats" aria-label="Menü bölümleri" data-cats><a href="#m-soguk" data-cat-link="soguk" data-en="Cold meze">Soğuklar</a><a href="#m-sicak" data-cat-link="sicak" data-en="Hot small plates">Ara sıcaklar</a><a href="#m-deniz" data-cat-link="deniz" data-en="From the sea">Denizden</a><a href="#m-ates" data-cat-link="ates" data-en="From the fire">Ateşten</a><a href="#m-tatli" data-cat-link="tatli" data-en="Desserts">Tatlılar</a><a href="#m-icecek" data-cat-link="icecek" data-en="Drinks">İçecekler</a><span class="menubar__ink" aria-hidden="true"></span></nav>
+          <div class="menubar__tools">
+            <button class="tool" type="button" aria-expanded="false" aria-controls="filters" data-filter-toggle><span data-en="Filter">Filtre</span><b data-filter-count hidden></b></button>
+            <div class="lang" role="group" aria-label="Menü dili / Menu language">
+              <button type="button" aria-pressed="true" data-lang="tr">TR</button><button type="button" aria-pressed="false" data-lang="en">EN</button>
+            </div>
+          </div>
+        </div>
+        <div class="filters" id="filters" data-filters hidden>
+          <div class="filters__inner wrap">
+            <fieldset>
+              <legend data-en="Diet">Beslenme</legend>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:v" data-en="Vegetarian">Vejetaryen</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:vg" data-en="Vegan">Vegan</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:gf" data-en="Gluten-free">Glutensiz</button>
+            </fieldset>
+            <fieldset>
+              <legend data-en="Leave out">İçermesin</legend>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:milk" data-en="Dairy">Süt ürünü</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:sea" data-en="Shellfish">Kabuklu ve yumuşakça</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:nuts" data-en="Nuts">Kuruyemiş</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:sesame" data-en="Sesame">Susam</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:fish" data-en="Fish">Balık</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:egg" data-en="Egg">Yumurta</button>
+            </fieldset>
+            <div class="filters__foot">
+              <p class="filters__count" data-count aria-live="polite"></p>
+              <button type="button" class="link" data-filter-clear data-en="Clear">Temizle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__body wrap" data-menu-body>
+        <section class="cat" id="m-soguk" data-cat="soguk" aria-labelledby="c-soguk"><header class="cat__head"><span class="cat__no">01</span><h3 class="cat__name" id="c-soguk" data-en="Cold meze">Soğuklar</h3><p class="cat__note" data-en="Made twice a day, at noon and at six.">Günde iki kez hazırlanır: öğlen ve akşam altıda.</p></header><ol class="dishes"><li class="dish" data-diet="v" data-al="milk" data-kcal="210" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">01</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Haydari">Haydari</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">260<small> ₺</small></span></span><span class="dish__desc" data-en="Strained sheep&#x27;s yogurt, dried mint, urfa chilli oil, garlic">Süzme koyun yoğurdu, kuru nane, Urfa biberi yağı, sarımsak</span><span class="dish__meta"><span class="dish__diet" data-en="Vegetarian">Vejetaryen</span><span class="dish__als"><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr></span><span class="dish__kcal">210 kcal</span></span></span></button></li><li class="dish has-img" data-diet="v vg" data-al="sesame" data-kcal="180" data-tags="chef" data-img="./assets/img/lodos/d-eggplant-480.webp" data-img-lg="./assets/img/lodos/d-eggplant-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">02</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Fire-charred aubergine, tahini">Közlenmiş patlıcan, tahin</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">290<small> ₺</small></span></span><span class="dish__desc" data-en="Coal-roasted aubergine, tahini, pomegranate molasses, toasted sesame, parsley">Közde patlıcan, tahin, nar ekşisi, kavrulmuş susam, maydanoz</span><span class="dish__meta"><span class="dish__tag dish__tag--chef" data-en="Chef&#x27;s pick">Şefin seçimi</span><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"><abbr class="al" title="Susam" data-al="sesame"><sup>11</sup>Ss</abbr></span><span class="dish__kcal">180 kcal</span></span></span></button></li><li class="dish has-img" data-diet="" data-al="sesame milk" data-kcal="340" data-tags="" data-img="./assets/img/lodos/d-hummus-480.webp" data-img-lg="./assets/img/lodos/d-hummus-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">03</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Hummus, pastırma in brown butter">Humus, tereyağında pastırma</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">320<small> ₺</small></span></span><span class="dish__desc" data-en="Chickpeas, tahini, lemon, topped with Kayseri pastırma crisped in butter">Nohut, tahin, limon; üzerine tereyağında kızdırılmış Kayseri pastırması</span><span class="dish__meta"><span class="dish__als"><abbr class="al" title="Susam" data-al="sesame"><sup>11</sup>Ss</abbr><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr></span><span class="dish__kcal">340 kcal</span></span></span></button></li><li class="dish has-img" data-diet="v vg" data-al="gluten nuts" data-kcal="260" data-tags="" data-img="./assets/img/lodos/d-meze-dips-480.webp" data-img-lg="./assets/img/lodos/d-meze-dips-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">04</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Muhammara">Muhammara</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">280<small> ₺</small></span></span><span class="dish__desc" data-en="Roasted red pepper, walnut, breadcrumbs, pomegranate molasses, cumin">Közlenmiş kırmızı biber, ceviz, ekmek kırıntısı, nar ekşisi, kimyon</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"><abbr class="al" title="Gluten içeren tahıllar" data-al="gluten"><sup>1</sup>Gl</abbr><abbr class="al" title="Sert kabuklu meyveler" data-al="nuts"><sup>8</sup>Km</abbr></span><span class="dish__kcal">260 kcal</span></span></span></button></li><li class="dish" data-diet="" data-al="fish" data-kcal="190" data-tags="chef"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">05</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Lakerda">Lakerda</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">420<small> ₺</small></span></span><span class="dish__desc" data-en="House-cured bonito, red onion, capers, olive oil">Evde tuzlanmış palamut, kırmızı soğan, kapari, zeytinyağı</span><span class="dish__meta"><span class="dish__tag dish__tag--chef" data-en="Chef&#x27;s pick">Şefin seçimi</span><span class="dish__als"><abbr class="al" title="Balık" data-al="fish"><sup>4</sup>Bl</abbr></span><span class="dish__kcal">190 kcal</span></span></span></button></li><li class="dish" data-diet="" data-al="mollusc celery" data-kcal="170" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">06</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Octopus salad">Ahtapot salatası</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">460<small> ₺</small></span></span><span class="dish__desc" data-en="Poached octopus, celery, lemon, thyme, spring onion">Haşlanmış ahtapot, kereviz sapı, limon, kekik, taze soğan</span><span class="dish__meta"><span class="dish__als"><abbr class="al" title="Yumuşakçalar" data-al="mollusc"><sup>14</sup>Ym</abbr><abbr class="al" title="Kereviz" data-al="celery"><sup>9</sup>Kr</abbr></span><span class="dish__kcal">170 kcal</span></span></span></button></li><li class="dish" data-diet="v vg" data-al="" data-kcal="150" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">07</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Leeks in olive oil">Zeytinyağlı pırasa</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">240<small> ₺</small></span></span><span class="dish__desc" data-en="Leek, carrot, rice, lemon, Ayvalık olive oil">Pırasa, havuç, pirinç, limon, Ayvalık zeytinyağı</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"></span><span class="dish__kcal">150 kcal</span></span></span></button></li><li class="dish has-img" data-diet="v vg" data-al="nuts" data-kcal="220" data-tags="" data-img="./assets/img/lodos/d-salad-480.webp" data-img-lg="./assets/img/lodos/d-salad-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">08</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Seasonal salad">Mevsim salatası</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">320<small> ₺</small></span></span><span class="dish__desc" data-en="Lettuce, pomegranate, walnut, radish, sumac, olive oil">Kıvırcık, nar, ceviz, turp, sumak, zeytinyağı</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"><abbr class="al" title="Sert kabuklu meyveler" data-al="nuts"><sup>8</sup>Km</abbr></span><span class="dish__kcal">220 kcal</span></span></span></button></li></ol></section>
+<section class="cat" id="m-sicak" data-cat="sicak" aria-labelledby="c-sicak"><header class="cat__head"><span class="cat__no">02</span><h3 class="cat__name" id="c-sicak" data-en="Hot small plates">Ara sıcaklar</h3><p class="cat__note" data-en="Straight from the stove, for the middle of the table.">Ocaktan sıcak sıcak; ortaya, paylaşmak için.</p></header><ol class="dishes"><li class="dish has-img" data-diet="" data-al="mollusc gluten milk egg" data-kcal="520" data-tags="share" data-img="./assets/img/lodos/d-calamari-480.webp" data-img-lg="./assets/img/lodos/d-calamari-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">09</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Crisp squid, tarragon ayran">Kalamar, tarhunlu ayran</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">540<small> ₺</small></span></span><span class="dish__desc" data-en="Crisp squid rings, tarragon, ayran dip, lemon zest">Çıtır kalamar halkaları, tarhun, ayran sosu, limon kabuğu</span><span class="dish__meta"><span class="dish__tag dish__tag--share" data-en="To share">Paylaşımlık</span><span class="dish__als"><abbr class="al" title="Yumuşakçalar" data-al="mollusc"><sup>14</sup>Ym</abbr><abbr class="al" title="Gluten içeren tahıllar" data-al="gluten"><sup>1</sup>Gl</abbr><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr><abbr class="al" title="Yumurta" data-al="egg"><sup>3</sup>Yu</abbr></span><span class="dish__kcal">520 kcal</span></span></span></button></li><li class="dish" data-diet="" data-al="gluten milk egg" data-kcal="480" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">10</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Paçanga börek">Paçanga böreği</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">420<small> ₺</small></span></span><span class="dish__desc" data-en="Kayseri pastırma, kashar cheese, tomato, green pepper in yufka">Kayseri pastırması, kaşar, domates, sivri biber; yufkada</span><span class="dish__meta"><span class="dish__als"><abbr class="al" title="Gluten içeren tahıllar" data-al="gluten"><sup>1</sup>Gl</abbr><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr><abbr class="al" title="Yumurta" data-al="egg"><sup>3</sup>Yu</abbr></span><span class="dish__kcal">480 kcal</span></span></span></button></li><li class="dish" data-diet="v" data-al="milk" data-kcal="210" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">11</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Coal-roasted mushrooms, thyme butter">Közde mantar, kekikli tereyağı</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">360<small> ₺</small></span></span><span class="dish__desc" data-en="Oyster mushrooms, thyme, butter, crisp garlic">İstiridye mantarı, kekik, tereyağı, kızarmış sarımsak</span><span class="dish__meta"><span class="dish__diet" data-en="Vegetarian">Vejetaryen</span><span class="dish__als"><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr></span><span class="dish__kcal">210 kcal</span></span></span></button></li><li class="dish" data-diet="" data-al="crust milk" data-kcal="460" data-tags="spicy"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">12</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Prawn güveç">Karides güveç</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">680<small> ₺</small></span></span><span class="dish__desc" data-en="Saros red prawns, butter, tomato, kashar cheese, chilli flakes">Saros kırmızı karidesi, tereyağı, domates, kaşar, pul biber</span><span class="dish__meta"><span class="dish__tag dish__tag--spicy" data-en="Spicy">Acı</span><span class="dish__als"><abbr class="al" title="Kabuklular" data-al="crust"><sup>2</sup>Kb</abbr><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr></span><span class="dish__kcal">460 kcal</span></span></span></button></li><li class="dish has-img" data-diet="v" data-al="milk nuts" data-kcal="380" data-tags="" data-img="./assets/img/lodos/d-pumpkin-480.webp" data-img-lg="./assets/img/lodos/d-pumpkin-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">13</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Pumpkin, tulum cheese">Bal kabağı, tulum peyniri</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">420<small> ₺</small></span></span><span class="dish__desc" data-en="Coal-roasted pumpkin, Erzincan tulum cheese, toasted hazelnut, sage">Közde bal kabağı, Erzincan tulumu, kavrulmuş fındık, adaçayı</span><span class="dish__meta"><span class="dish__diet" data-en="Vegetarian">Vejetaryen</span><span class="dish__als"><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr><abbr class="al" title="Sert kabuklu meyveler" data-al="nuts"><sup>8</sup>Km</abbr></span><span class="dish__kcal">380 kcal</span></span></span></button></li><li class="dish has-img" data-diet="v" data-al="gluten milk" data-kcal="310" data-tags="" data-img="./assets/img/lodos/d-bread-480.webp" data-img-lg="./assets/img/lodos/d-bread-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">14</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Sourdough, cultured butter">Fırından ekşi maya, tereyağı</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">140<small> ₺</small></span></span><span class="dish__desc" data-en="Baked every evening; salted butter, Ayvalık olive oil. Ordered on request.">Her akşam fırından; tuzlu tereyağı, Ayvalık zeytinyağı. İsteğe bağlıdır.</span><span class="dish__meta"><span class="dish__diet" data-en="Vegetarian">Vejetaryen</span><span class="dish__als"><abbr class="al" title="Gluten içeren tahıllar" data-al="gluten"><sup>1</sup>Gl</abbr><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr></span><span class="dish__kcal">310 kcal</span></span></span></button></li></ol></section>
+<section class="cat" id="m-deniz" data-cat="deniz" aria-labelledby="c-deniz"><header class="cat__head"><span class="cat__no">03</span><h3 class="cat__name" id="c-deniz" data-en="From the sea">Denizden</h3><p class="cat__note" data-en="Whatever the morning market brought. Once it&#x27;s gone, it&#x27;s gone.">Sabah pazardan ne geldiyse. Bitince tahtadan silinir.</p></header><ol class="dishes"><li class="dish has-img" data-diet="" data-al="fish" data-kcal="0" data-tags="chef share" data-img="./assets/img/lodos/d-fish-whole-480.webp" data-img-lg="./assets/img/lodos/d-fish-whole-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">15</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Whole fish of the day">Günün balığı, bütün</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">kg 2.400<small> ₺</small></span></span><span class="dish__desc" data-en="Whatever&#x27;s on the counter: bluefish, sea bass or turbot. Carved at the table, priced by weight.">Tezgâhta ne varsa: lüfer, levrek ya da kalkan. Masada bölünür; fiyat kilo üzerinden.</span><span class="dish__meta"><span class="dish__tag dish__tag--chef" data-en="Chef&#x27;s pick">Şefin seçimi</span><span class="dish__tag dish__tag--share" data-en="To share">Paylaşımlık</span><span class="dish__als"><abbr class="al" title="Balık" data-al="fish"><sup>4</sup>Bl</abbr></span></span></span></button></li><li class="dish has-img" data-diet="" data-al="fish" data-kcal="520" data-tags="" data-img="./assets/img/lodos/hero-grill-960.webp" data-img-lg="./assets/img/lodos/hero-grill-1600.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">16</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Charcoal mackerel">Közde uskumru</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">640<small> ₺</small></span></span><span class="dish__desc" data-en="Two mackerel, bay leaf, sumac onions, rocket">Çifte uskumru, defne yaprağı, sumaklı soğan, roka</span><span class="dish__meta"><span class="dish__als"><abbr class="al" title="Balık" data-al="fish"><sup>4</sup>Bl</abbr></span><span class="dish__kcal">520 kcal</span></span></span></button></li><li class="dish has-img" data-diet="" data-al="mollusc" data-kcal="480" data-tags="chef" data-img="./assets/img/lodos/d-octopus-480.webp" data-img-lg="./assets/img/lodos/d-octopus-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">17</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Grilled octopus, fava">Izgara ahtapot, fava</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">920<small> ₺</small></span></span><span class="dish__desc" data-en="Octopus tentacle, yellow split-pea fava, capers, pickled red onion">Ahtapot kolu, sarı fava, kapari, kırmızı soğan turşusu</span><span class="dish__meta"><span class="dish__tag dish__tag--chef" data-en="Chef&#x27;s pick">Şefin seçimi</span><span class="dish__als"><abbr class="al" title="Yumuşakçalar" data-al="mollusc"><sup>14</sup>Ym</abbr></span><span class="dish__kcal">480 kcal</span></span></span></button></li><li class="dish has-img" data-diet="" data-al="mollusc gluten" data-kcal="510" data-tags="" data-img="./assets/img/lodos/d-squid-480.webp" data-img-lg="./assets/img/lodos/d-squid-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">18</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Whole squid, squid-ink bulgur">Bütün kalamar, mürekkepli bulgur</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">760<small> ₺</small></span></span><span class="dish__desc" data-en="Whole grilled squid, squid-ink bulgur, lemon, parsley">Izgarada bütün kalamar, mürekkepli bulgur, limon, maydanoz</span><span class="dish__meta"><span class="dish__als"><abbr class="al" title="Yumuşakçalar" data-al="mollusc"><sup>14</sup>Ym</abbr><abbr class="al" title="Gluten içeren tahıllar" data-al="gluten"><sup>1</sup>Gl</abbr></span><span class="dish__kcal">510 kcal</span></span></span></button></li><li class="dish" data-diet="" data-al="fish" data-kcal="540" data-tags="new"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">19</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Fried anchovies">Hamsi tava</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">480<small> ₺</small></span></span><span class="dish__desc" data-en="Black Sea anchovies in cornmeal, red onion, lemon">Karadeniz hamsisi, mısır unu, kırmızı soğan, limon</span><span class="dish__meta"><span class="dish__tag dish__tag--new" data-en="New">Yeni</span><span class="dish__als"><abbr class="al" title="Balık" data-al="fish"><sup>4</sup>Bl</abbr></span><span class="dish__kcal">540 kcal</span></span></span></button></li></ol></section>
+<section class="cat" id="m-ates" data-cat="ates" aria-labelledby="c-ates"><header class="cat__head"><span class="cat__no">04</span><h3 class="cat__name" id="c-ates" data-en="From the fire">Ateşten</h3><p class="cat__note" data-en="Over oak charcoal, on a cast-iron grill.">Meşe kömüründe, dökme demir ızgarada.</p></header><ol class="dishes"><li class="dish has-img" data-diet="" data-al="gluten milk celery" data-kcal="880" data-tags="chef" data-img="./assets/img/lodos/d-lamb-shank-480.webp" data-img-lg="./assets/img/lodos/d-lamb-shank-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">20</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Lamb shank, keşkek">Kuzu incik, keşkek</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">1.150<small> ₺</small></span></span><span class="dish__desc" data-en="Lamb shank slow-cooked for six hours, wheat keşkek, thyme jus">Altı saat kısık ateşte kuzu incik, aşurelik buğday keşkeği, kekikli et suyu</span><span class="dish__meta"><span class="dish__tag dish__tag--chef" data-en="Chef&#x27;s pick">Şefin seçimi</span><span class="dish__als"><abbr class="al" title="Gluten içeren tahıllar" data-al="gluten"><sup>1</sup>Gl</abbr><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr><abbr class="al" title="Kereviz" data-al="celery"><sup>9</sup>Kr</abbr></span><span class="dish__kcal">880 kcal</span></span></span></button></li><li class="dish has-img" data-diet="" data-al="" data-kcal="760" data-tags="spicy" data-img="./assets/img/lodos/d-lamb-chops-480.webp" data-img-lg="./assets/img/lodos/d-lamb-chops-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">21</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Lamb chops">Kuzu pirzola</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">1.240<small> ₺</small></span></span><span class="dish__desc" data-en="Four chops, charred tomato, sumac, isot pepper">Dört parça, közlenmiş domates, sumak, isot</span><span class="dish__meta"><span class="dish__tag dish__tag--spicy" data-en="Spicy">Acı</span><span class="dish__als"></span><span class="dish__kcal">760 kcal</span></span></span></button></li><li class="dish" data-diet="" data-al="gluten sesame egg" data-kcal="690" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">22</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Charcoal köfte, piyaz">Közde köfte, piyaz</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">640<small> ₺</small></span></span><span class="dish__desc" data-en="Beef and lamb köfte, white bean piyaz with tahini, charred pepper">Dana-kuzu köfte, tahinli Antalya piyazı, közlenmiş biber</span><span class="dish__meta"><span class="dish__als"><abbr class="al" title="Gluten içeren tahıllar" data-al="gluten"><sup>1</sup>Gl</abbr><abbr class="al" title="Susam" data-al="sesame"><sup>11</sup>Ss</abbr><abbr class="al" title="Yumurta" data-al="egg"><sup>3</sup>Yu</abbr></span><span class="dish__kcal">690 kcal</span></span></span></button></li><li class="dish is-soldout" data-diet="v vg" data-al="sesame" data-kcal="420" data-tags="soldout"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">23</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Charcoal vegetable plate">Közde sebze tabağı</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">520<small> ₺</small></span></span><span class="dish__desc" data-en="Pumpkin, leek, mushroom, charred pepper, pomegranate molasses, tahini">Bal kabağı, pırasa, mantar, köz biber, nar ekşisi, tahin</span><span class="dish__meta"><span class="dish__tag dish__tag--soldout" data-en="Sold out today">Bugün bitti</span><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"><abbr class="al" title="Susam" data-al="sesame"><sup>11</sup>Ss</abbr></span><span class="dish__kcal">420 kcal</span></span></span></button></li></ol></section>
+<section class="cat" id="m-tatli" data-cat="tatli" aria-labelledby="c-tatli"><header class="cat__head"><span class="cat__no">05</span><h3 class="cat__name" id="c-tatli" data-en="Desserts">Tatlılar</h3><p class="cat__note" data-en="Seasonal. Right now: quince and pumpkin.">Mevsimine göre. Şu sıralar ayva ve bal kabağı.</p></header><ol class="dishes"><li class="dish has-img" data-diet="v" data-al="milk nuts" data-kcal="520" data-tags="chef" data-img="./assets/img/lodos/d-quince-480.webp" data-img-lg="./assets/img/lodos/d-quince-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">24</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Baked quince, kaymak">Ayva tatlısı, kaymak</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">420<small> ₺</small></span></span><span class="dish__desc" data-en="Clove-baked quince, Afyon clotted cream, pistachio">Karanfilli fırın ayva, Afyon kaymağı, Antep fıstığı</span><span class="dish__meta"><span class="dish__tag dish__tag--chef" data-en="Chef&#x27;s pick">Şefin seçimi</span><span class="dish__diet" data-en="Vegetarian">Vejetaryen</span><span class="dish__als"><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr><abbr class="al" title="Sert kabuklu meyveler" data-al="nuts"><sup>8</sup>Km</abbr></span><span class="dish__kcal">520 kcal</span></span></span></button></li><li class="dish has-img" data-diet="v" data-al="milk egg" data-kcal="380" data-tags="" data-img="./assets/img/lodos/d-flan-480.webp" data-img-lg="./assets/img/lodos/d-flan-960.webp"><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">25</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Cardamom crème caramel">Kakuleli krem karamel</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">340<small> ₺</small></span></span><span class="dish__desc" data-en="Made in house; cardamom, orange zest">Evde yapılır; kakule, portakal kabuğu</span><span class="dish__meta"><span class="dish__diet" data-en="Vegetarian">Vejetaryen</span><span class="dish__als"><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr><abbr class="al" title="Yumurta" data-al="egg"><sup>3</sup>Yu</abbr></span><span class="dish__kcal">380 kcal</span></span></span></button></li><li class="dish" data-diet="v vg" data-al="sesame nuts" data-kcal="450" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">26</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Candied pumpkin, tahini">Kabak tatlısı, tahin</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">360<small> ₺</small></span></span><span class="dish__desc" data-en="Pumpkin, tahini, walnut">Bal kabağı, tahin, ceviz</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"><abbr class="al" title="Susam" data-al="sesame"><sup>11</sup>Ss</abbr><abbr class="al" title="Sert kabuklu meyveler" data-al="nuts"><sup>8</sup>Km</abbr></span><span class="dish__kcal">450 kcal</span></span></span></button></li></ol></section>
+<section class="cat" id="m-icecek" data-cat="icecek" aria-labelledby="c-icecek"><header class="cat__head"><span class="cat__no">06</span><h3 class="cat__name" id="c-icecek" data-en="Drinks">İçecekler</h3><p class="cat__note" data-en="Wines by the glass change every week.">Kadeh şarapları her hafta değişir.</p></header><ol class="dishes"><li class="dish" data-diet="v vg" data-al="" data-kcal="120" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">27</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Sage lemonade">Adaçaylı limonata</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">190<small> ₺</small></span></span><span class="dish__desc" data-en="Freshly squeezed; sage, lightly sweetened">Evde sıkılır; adaçayı, az şeker</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"></span><span class="dish__kcal">120 kcal</span></span></span></button></li><li class="dish" data-diet="v vg" data-al="" data-kcal="40" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">28</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Şalgam">Şalgam</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">120<small> ₺</small></span></span><span class="dish__desc" data-en="Spicy or mild fermented turnip juice">Acılı ya da acısız</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"></span><span class="dish__kcal">40 kcal</span></span></span></button></li><li class="dish" data-diet="v" data-al="milk" data-kcal="110" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">29</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Frothy ayran">Köpüklü ayran</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">110<small> ₺</small></span></span><span class="dish__desc" data-en="Served in a copper cup">Bakır tasta</span><span class="dish__meta"><span class="dish__diet" data-en="Vegetarian">Vejetaryen</span><span class="dish__als"><abbr class="al" title="Süt" data-al="milk"><sup>7</sup>Sü</abbr></span><span class="dish__kcal">110 kcal</span></span></span></button></li><li class="dish" data-diet="v vg" data-al="" data-kcal="15" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">30</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Turkish coffee">Türk kahvesi</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">160<small> ₺</small></span></span><span class="dish__desc" data-en="Brewed over embers, with lokum">Közde pişer; yanında lokum</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"></span><span class="dish__kcal">15 kcal</span></span></span></button></li><li class="dish" data-diet="v vg" data-al="sulphite" data-kcal="125" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">31</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Kalecik Karası · glass">Kalecik Karası · kadeh</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">450<small> ₺</small></span></span><span class="dish__desc" data-en="Ankara; light-bodied red">Ankara; kırmızı, hafif gövdeli</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"><abbr class="al" title="Sülfit" data-al="sulphite"><sup>12</sup>Sf</abbr></span><span class="dish__kcal">125 kcal</span></span></span></button></li><li class="dish" data-diet="v vg" data-al="sulphite" data-kcal="120" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">32</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Narince · glass">Narince · kadeh</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">430<small> ₺</small></span></span><span class="dish__desc" data-en="Tokat; mineral white">Tokat; beyaz, mineralli</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"><abbr class="al" title="Sülfit" data-al="sulphite"><sup>12</sup>Sf</abbr></span><span class="dish__kcal">120 kcal</span></span></span></button></li><li class="dish" data-diet="v vg" data-al="sulphite" data-kcal="0" data-tags=""><button class="dish__btn" type="button" aria-haspopup="dialog"><span class="dish__no">33</span><span class="dish__body"><span class="dish__line"><span class="dish__name" data-en="Öküzgözü–Boğazkere · bottle">Öküzgözü–Boğazkere · şişe</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price">2.400<small> ₺</small></span></span><span class="dish__desc" data-en="Grapes from Elazığ and Diyarbakır; full-bodied red">Elazığ ve Diyarbakır üzümleri; dolgun kırmızı</span><span class="dish__meta"><span class="dish__diet" data-en="Vegan">Vegan</span><span class="dish__als"><abbr class="al" title="Sülfit" data-al="sulphite"><sup>12</sup>Sf</abbr></span></span></span></button></li></ol></section>
+        <p class="menu__empty" data-empty hidden data-en="No dish matches these filters. Ask us; the kitchen can often adapt a plate.">Bu filtrelere uyan tabak yok. Bize sorun; mutfak çoğu tabağı uyarlayabiliyor.</p>
+        <aside class="legend" aria-labelledby="legend-title">
+          <h3 class="legend__title" id="legend-title"><span data-en="Allergens">Alerjenler</span> <small data-en="Numbered per the Turkish Food Codex list">Türk Gıda Kodeksi listesindeki sırayla</small></h3>
+          <ul class="legend__grid"><li><abbr class="al" title="Gluten içeren tahıllar"><sup>1</sup>Gl</abbr><span data-en="Cereals with gluten">Gluten içeren tahıllar</span></li><li><abbr class="al" title="Kabuklular"><sup>2</sup>Kb</abbr><span data-en="Crustaceans">Kabuklular</span></li><li><abbr class="al" title="Yumurta"><sup>3</sup>Yu</abbr><span data-en="Egg">Yumurta</span></li><li><abbr class="al" title="Balık"><sup>4</sup>Bl</abbr><span data-en="Fish">Balık</span></li><li><abbr class="al" title="Yer fıstığı"><sup>5</sup>Yf</abbr><span data-en="Peanut">Yer fıstığı</span></li><li><abbr class="al" title="Soya"><sup>6</sup>So</abbr><span data-en="Soy">Soya</span></li><li><abbr class="al" title="Süt"><sup>7</sup>Sü</abbr><span data-en="Milk">Süt</span></li><li><abbr class="al" title="Sert kabuklu meyveler"><sup>8</sup>Km</abbr><span data-en="Tree nuts">Sert kabuklu meyveler</span></li><li><abbr class="al" title="Kereviz"><sup>9</sup>Kr</abbr><span data-en="Celery">Kereviz</span></li><li><abbr class="al" title="Hardal"><sup>10</sup>Hr</abbr><span data-en="Mustard">Hardal</span></li><li><abbr class="al" title="Susam"><sup>11</sup>Ss</abbr><span data-en="Sesame">Susam</span></li><li><abbr class="al" title="Sülfit"><sup>12</sup>Sf</abbr><span data-en="Sulphites">Sülfit</span></li><li><abbr class="al" title="Acı bakla"><sup>13</sup>Ab</abbr><span data-en="Lupin">Acı bakla</span></li><li><abbr class="al" title="Yumuşakçalar"><sup>14</sup>Ym</abbr><span data-en="Molluscs">Yumuşakçalar</span></li></ul>
+          <p class="legend__note" data-en="Allergen information is declared by our kitchen. Trace amounts can't be ruled out in a shared kitchen; please tell your server about any allergy.">Alerjen bilgisi mutfağımızın beyanıdır. Ortak mutfakta eser miktar bulaşma tamamen engellenemez; alerjiniz varsa lütfen servis ekibine söyleyin.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="evening section" id="aksam" data-tone="dark">
+    <div class="wrap">
+      <header class="shead"><span class="numeral">v.</span><span class="eyebrow">Bir akşam Lodos'ta</span></header>
+      <h2 class="display-l" data-split>Saat saat <em>bir akşam.</em></h2>
+      <ol class="timeline" data-timeline>
+        <li><time>18.00</time><h3>Kapı açılır</h3><p>İlk mezeler tezgâha dizilir; erken gelen seçer.</p></li>
+        <li><time>19.30</time><h3>Ocak kızarır</h3><p>Kömür beyaza dönünce ilk balık ızgaraya iner.</p></li>
+        <li><time>21.00</time><h3>Günün balığı bölünür</h3><p>Bütün balık, masada, herkesin gözü önünde.</p></li>
+        <li><time>23.30</time><h3>Son sipariş</h3><p>Mutfak kapanır; tatlıya ve kahveye hâlâ vakit var.</p></li>
+        <li><time>00.30</time><h3>Işıklar kısılır</h3><p>Cuma ve cumartesi bir saat daha geç.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="place section" id="mekan" data-tone="dark">
+    <div class="wrap">
+      <div class="place__head">
+        <header class="shead"><span class="numeral">vi.</span><span class="eyebrow">Mekân</span></header>
+        <h2 class="display-l" data-split>Taş duvar, loş ışık, <em>uzun masa.</em></h2>
+      </div>
+      <div class="gallery">
+        <figure class="g g--1"><div class="frame" data-reveal><img alt="Taş duvarlı, pencereli loş salon ve kurulu masalar" sizes="(min-width: 900px) 58vw, 92vw" src="./assets/img/lodos/room-stone-1600.webp" srcset="./assets/img/lodos/room-stone-960.webp 960w, ./assets/img/lodos/room-stone-1600.webp 1600w, ./assets/img/lodos/room-stone-2200.webp 2200w" width="2200" height="1391" loading="lazy" decoding="async"></div><figcaption>Ön salon · pencere önü masaları</figcaption></figure>
+        <figure class="g g--2"><div class="frame" data-reveal><img alt="Bakır lambaların altında tabak hazırlayan aşçının elleri" sizes="(min-width: 900px) 30vw, 92vw" data-speed="0.4" src="./assets/img/lodos/chef-copper-960.webp" srcset="./assets/img/lodos/chef-copper-480.webp 480w, ./assets/img/lodos/chef-copper-960.webp 960w, ./assets/img/lodos/chef-copper-1500.webp 1500w" width="1500" height="2189" loading="lazy" decoding="async"></div><figcaption>Açık mutfak · bakır lambaların altı</figcaption></figure>
+        <figure class="g g--3"><div class="frame" data-reveal><img alt="Gece bahçede mumlarla aydınlatılmış uzun masa" sizes="(min-width: 900px) 40vw, 92vw" src="./assets/img/lodos/longtable-1600.webp" srcset="./assets/img/lodos/longtable-960.webp 960w, ./assets/img/lodos/longtable-1600.webp 1600w, ./assets/img/lodos/longtable-2200.webp 2200w" width="2200" height="3295" loading="lazy" decoding="async"></div><figcaption>Arka bahçe · 22 kişilik uzun masa, özel davetlere açık</figcaption></figure>
+        <figure class="g g--4"><div class="frame" data-reveal><img alt="Karanlıkta sarkan üç sarkıt lamba" sizes="(min-width: 900px) 24vw, 46vw" data-speed="0.8" src="./assets/img/lodos/lamps-960.webp" srcset="./assets/img/lodos/lamps-480.webp 480w, ./assets/img/lodos/lamps-960.webp 960w, ./assets/img/lodos/lamps-1500.webp 1500w" width="1500" height="1000" loading="lazy" decoding="async"></div></figure>
+        <figure class="g g--5"><div class="frame" data-reveal><img alt="Ahşap masalı, duvar lambalı arka salon" sizes="(min-width: 900px) 34vw, 92vw" src="./assets/img/lodos/room-dining-1600.webp" srcset="./assets/img/lodos/room-dining-960.webp 960w, ./assets/img/lodos/room-dining-1600.webp 1600w, ./assets/img/lodos/room-dining-2200.webp 2200w" width="2200" height="1467" loading="lazy" decoding="async"></div><figcaption>Arka salon · 18 kişi</figcaption></figure>
+        <figure class="g g--6"><div class="frame" data-reveal><img alt="Servis öncesi tabağa sos dökülürken" sizes="(min-width: 900px) 30vw, 46vw" src="./assets/img/lodos/chef-pour-960.webp" srcset="./assets/img/lodos/chef-pour-480.webp 480w, ./assets/img/lodos/chef-pour-960.webp 960w, ./assets/img/lodos/chef-pour-1500.webp 1500w" width="1500" height="1500" loading="lazy" decoding="async"></div><figcaption>Servisten hemen önce</figcaption></figure>
+      </div>
+      <blockquote class="quote">
+        <p data-words>“Balığı ateşe sormadan tuzlamayız.”</p>
+        <footer>— Lodos mutfağı</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="reserve section" id="rezervasyon" data-tone="dark">
+    <div class="wrap reserve__grid">
+      <div class="reserve__intro">
+        <header class="shead"><span class="numeral">vii.</span><span class="eyebrow">Rezervasyon</span></header>
+        <h2 class="display-l" data-split>Masanızı <em>ayıralım.</em></h2>
+        <p class="lead">Talebinizi bırakın; en geç bir saat içinde arayıp onaylayalım. Masalar 15 dakika tutulur.</p>
+        <ul class="notes">
+          <li>Yedi kişi ve üzeri gruplar için arka salonu kapatabiliriz.</li>
+          <li>Pazartesi kapalıyız; mutfak kapanıştan 30 dakika önce son siparişi alır.</li>
+          <li>Alerjiniz varsa not alanına yazın, mutfağa iletelim.</li>
+        </ul>
+      </div>
+      <form class="rform" data-reserve novalidate>
+        <fieldset class="rform__step">
+          <legend><span>01</span>Gün</legend>
+          <div class="chips chips--days" data-days role="radiogroup" aria-label="Gün seçin"></div>
+        </fieldset>
+        <fieldset class="rform__step">
+          <legend><span>02</span>Saat</legend>
+          <div class="chips" data-times role="radiogroup" aria-label="Saat seçin"><p class="chips__empty">Önce bir gün seçin.</p></div>
+        </fieldset>
+        <fieldset class="rform__step">
+          <legend><span>03</span>Kişi</legend>
+          <div class="stepper">
+            <button type="button" data-step="-1" aria-label="Bir kişi azalt">−</button>
+            <output data-party aria-live="polite">2</output>
+            <button type="button" data-step="1" aria-label="Bir kişi artır">+</button>
+          </div>
+          <p class="rform__hint" data-party-hint></p>
+        </fieldset>
+        <fieldset class="rform__step rform__fields">
+          <legend><span>04</span>İletişim</legend>
+          <label class="field"><span>Ad soyad</span><input name="ad" autocomplete="name" required></label>
+          <label class="field"><span>Telefon</span><input name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="05xx xxx xx xx" required></label>
+          <label class="field field--wide"><span>Not <small>(isteğe bağlı)</small></span><textarea name="not" rows="2" placeholder="Doğum günü, alerji, pencere kenarı…"></textarea></label>
+          <label class="check"><input type="checkbox" name="kvkk" required><span>Rezervasyon talebim için kişisel verilerimin işlenmesine dair <a href="#kvkk" data-kvkk>aydınlatma metnini</a> okudum.</span></label>
+        </fieldset>
+        <div class="rform__foot">
+          <p class="rform__summary" data-summary aria-live="polite">Gün ve saat seçin.</p>
+          <button class="btn btn--accent" type="submit" data-magnetic><span>Talebi gönder</span></button>
+        </div>
+        <p class="rform__error" data-error role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="visit section" id="iletisim" data-tone="dark">
+    <div class="wrap visit__grid">
+      <div class="visit__main">
+        <header class="shead"><span class="numeral">—</span><span class="eyebrow">İletişim</span></header>
+        <h2 class="display-m">Moda'da, iskeleye <em>altı dakika.</em></h2>
+        <address>Caferağa Mahallesi, Moda<br>Kadıköy / İstanbul</address>
+        <p class="visit__phone"><a href="tel:+902160000000">0216 000 00 00</a></p>
+        <p class="visit__ways">Kadıköy iskelesinden 12 dakika yürüyüş · Moda tramvay durağına 3 dakika · Yakında otopark yok, vale de yok.</p>
+        <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Moda%2C%20Kad%C4%B1k%C3%B6y" target="_blank" rel="noopener"><span>Haritada aç</span></a>
+      </div>
+      <div class="visit__hours">
+        <h3 class="eyebrow">Saatler</h3>
+        <table class="hours" data-hours-table>
+          <caption class="sr-only">Haftalık çalışma saatleri</caption>
+          <tbody><tr data-day="1"><th scope="row">Pazartesi</th><td>Kapalı</td></tr><tr data-day="2"><th scope="row">Salı</th><td>18.00–00.30</td></tr><tr data-day="3"><th scope="row">Çarşamba</th><td>18.00–00.30</td></tr><tr data-day="4"><th scope="row">Perşembe</th><td>18.00–00.30</td></tr><tr data-day="5"><th scope="row">Cuma</th><td>18.00–01.30</td></tr><tr data-day="6"><th scope="row">Cumartesi</th><td>18.00–01.30</td></tr><tr data-day="0"><th scope="row">Pazar</th><td>13.00–23.00</td></tr></tbody>
+        </table>
+        <p class="visit__note">Mutfak kapanıştan 30 dakika önce son siparişi alır. Resmî tatillerde saatler Instagram'da duyurulur.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" data-tone="dark">
+  <div class="wrap footer__top">
+    <div class="footer__col">
+      <p class="eyebrow">Lodos</p>
+      <p>Bülten yok, kampanya yok.<br>Menü değişince tahtaya yazarız.</p>
+    </div>
+    <nav class="footer__col" aria-label="Alt bağlantılar">
+      <a href="#menu">Menü</a><a href="#rezervasyon">Rezervasyon</a><a href="#kvkk" data-kvkk>KVKK aydınlatma metni</a><a href="#cerez" data-kvkk>Çerez politikası</a>
+    </nav>
+    <p class="footer__col footer__demo">Bu sayfa bir restoran web sitesi şablonudur. Lodos kurgusal bir işletmedir; fiyatlar ve saatler örnektir. Fotoğraflar Unsplash lisansıyla kullanılmıştır.</p>
+  </div>
+  <p class="footer__word" aria-hidden="true" data-footer-word><span>L</span><span>o</span><span>d</span><span>o</span><span>s</span></p>
+  <div class="wrap footer__bottom"><span>© <span data-year>2026</span> Lodos</span><span>Moda — Kadıköy — İstanbul</span></div>
+</footer>
+
+<nav class="switch" aria-label="Şablon seçimi" data-switch>
+  <span class="switch__label">Şablon</span>
+  <a href="./" aria-current="page">Restoran</a>
+  <a href="./kafe/">Kafe</a>
+</nav>
+
+<div class="tablebar" data-tablebar hidden>
+  <p class="tablebar__no"><span data-en="Table">Masa</span> <b data-table-no></b></p>
+  <button type="button" class="tablebar__btn" data-wifi><span data-en="Wi-Fi password">Wi-Fi şifresi</span></button>
+  <a class="tablebar__btn" href="#menu" data-en="Menu">Menü</a>
+</div>
+
+<div class="preview" data-preview aria-hidden="true"><img alt=""></div>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<dialog class="sheet" data-sheet aria-labelledby="sheet-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <figure class="sheet__media" data-sheet-media><img data-sheet-img alt=""></figure>
+    <div class="sheet__body">
+      <p class="sheet__cat mono" data-sheet-cat></p>
+      <h3 class="sheet__title" id="sheet-title" data-sheet-title></h3>
+      <p class="sheet__price" data-sheet-price></p>
+      <h4 class="sheet__label" data-en="Ingredients">İçindekiler</h4>
+      <p class="sheet__desc" data-sheet-desc></p>
+      <div class="sheet__facts">
+        <div><h4 class="sheet__label" data-en="Energy">Enerji</h4><p data-sheet-kcal></p></div>
+        <div><h4 class="sheet__label" data-en="Allergens">Alerjenler</h4><ul class="sheet__als" data-sheet-al></ul></div>
+      </div>
+      <p class="sheet__tags" data-sheet-tags></p>
+      <p class="sheet__note" data-en="Have an allergy? Tell your server before ordering.">Alerjiniz varsa sipariş öncesi servis ekibine söyleyin.</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="sheet sheet--center" data-confirm aria-labelledby="confirm-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <div class="sheet__body">
+      <p class="eyebrow">Talebiniz hazır</p>
+      <h3 class="sheet__title" id="confirm-title">Bu mesaj işletmeye iletilecek</h3>
+      <pre class="confirm__msg" data-confirm-text></pre>
+      <div class="confirm__actions">
+        <button class="btn btn--accent" type="button" data-copy><span>Mesajı kopyala</span></button>
+        <button class="btn btn--line" type="button" data-close><span>Düzenle</span></button>
+      </div>
+      <p class="sheet__note">Şablon notu: gerçek sitede bu talep tek dokunuşla işletmenin WhatsApp hattına ya da e-postasına düşer; misafir bilgisi sunucuda tutulmaz.</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="sheet sheet--center" data-kvkk-dialog aria-labelledby="kvkk-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <div class="sheet__body prose">
+      <p class="eyebrow">Şablon metni</p>
+      <h3 class="sheet__title" id="kvkk-title">Aydınlatma metni</h3>
+      <p>Bu alan, işletmenin 6698 sayılı KVKK kapsamındaki aydınlatma metni içindir. Rezervasyon formunda yalnızca ad, telefon ve isteğe bağlı not alınır; bu bilgiler talebin karşılanması amacıyla işletmeye iletilir ve sitede saklanmaz.</p>
+      <p>Site çerez kullanmaz; ziyaret istatistikleri çerezsiz ve kişiyi tanımlamayan biçimde tutulur. Yazı tipleri ve görseller sitenin kendi sunucusundan yüklenir.</p>
+      <p>Gerçek sitede bu metin, işletmenin unvanı, iletişim bilgileri ve başvuru yollarıyla birlikte hukuk danışmanı onayıyla yayımlanır.</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="./assets/vendor/gsap.min.js" defer></script>
+<script src="./assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="./assets/vendor/SplitText.min.js" defer></script>
+<script src="./assets/vendor/lenis.min.js" defer></script>
+<script src="./assets/js/main.js" defer></script>
+</body>
+</html>

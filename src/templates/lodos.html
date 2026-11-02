@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="tr" data-brand="lodos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lodos — Moda'da deniz, ateş ve mevsim</title>
+<meta name="description" content="Moda'da meze, deniz ürünleri ve meşe kömüründe pişen mevsim yemekleri. Dijital menü, alerjen filtresi ve rezervasyon talebi içeren restoran şablonu.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e1311">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lodos — Moda'da deniz, ateş ve mevsim">
+<meta property="og:description" content="Restoran web sitesi şablonu: dijital menü, alerjen ve kalori bilgisi, rezervasyon talebi.">
+<meta property="og:image" content="{{site}}assets/img/lodos/hero-still-1600.webp">
+<meta property="og:url" content="{{url}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230e1311'/%3E%3Ccircle cx='20' cy='20' r='13' fill='none' stroke='%23ece4d3' stroke-width='1.6'/%3E%3Cpath d='M28 12 21.6 21.6 18.4 18.4Z' fill='%23d2683c'/%3E%3Cpath d='M12 28 21.6 21.6 18.4 18.4Z' fill='%23ece4d3'/%3E%3C/svg%3E">
+<link rel="preload" href="{{base}}assets/fonts/bodoni-moda-normal-400_900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{base}}assets/fonts/hanken-grotesk-normal-100_900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{base}}assets/fonts/fonts.css">
+<link rel="stylesheet" href="{{base}}assets/css/main.css">
+<script>(function(d){var h=d.documentElement;h.classList.add('js');try{var q=new URLSearchParams(location.search).has('masa'),s=sessionStorage.getItem('intro-lodos'),r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!q&&!s&&!r)h.classList.add('intro');if(q)h.classList.add('is-table')}catch(e){}})(document)</script>
+<script type="application/ld+json">{{jsonld}}</script>
+<script type="application/json" id="config">{{config}}</script>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+
+<div class="loader" data-loader aria-hidden="true">
+  <div class="loader__inner">
+    <svg class="loader__mark" viewBox="0 0 120 120">
+      <circle class="loader__ring" cx="60" cy="60" r="54" pathLength="1"/>
+      <path class="loader__tick" d="M60 2v12M60 106v12M2 60h12M106 60h12" pathLength="1"/>
+      <path class="loader__needle" d="M88 32 64.5 64.5 55.5 55.5Z"/>
+      <path class="loader__tail" d="M32 88 64.5 64.5 55.5 55.5Z"/>
+    </svg>
+    <p class="loader__word"><span>L</span><span>o</span><span>d</span><span>o</span><span>s</span></p>
+    <p class="loader__meta">Moda · Kadıköy · Güneybatıdan</p>
+  </div>
+</div>
+
+<header class="header" data-header>
+  <a class="brand" href="./" aria-label="Lodos, ana sayfa">
+    <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5"/><path class="brand__ticks" d="M20 1.5v3M20 35.5v3M1.5 20h3M35.5 20h3"/><g class="brand__needle"><path class="brand__n" d="M29 11 21.8 21.8 18.2 18.2Z"/><path class="brand__s" d="M11 29 21.8 21.8 18.2 18.2Z"/></g></svg>
+    <span class="brand__word">Lodos</span>
+  </a>
+  <nav class="nav" aria-label="Ana gezinme">
+    <a href="#menu">Menü</a>
+    <a href="#hikaye">Hikâye</a>
+    <a href="#mekan">Mekân</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <div class="header__end">
+    <p class="status" data-status><i aria-hidden="true"></i><span data-status-text>Saatler</span></p>
+    <a class="btn btn--line btn--small" href="#rezervasyon" data-magnetic><span>Masa ayırt</span></a>
+    <button class="burger" type="button" aria-label="Gezinme menüsünü aç" aria-expanded="false" aria-controls="mnav" data-nav-toggle><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" data-mobile-nav hidden>
+  <nav class="mnav__links" aria-label="Mobil gezinme">
+    <a href="#menu"><small>iv.</small>Menü</a>
+    <a href="#hikaye"><small>i.</small>Hikâye</a>
+    <a href="#ates"><small>iii.</small>Ateş</a>
+    <a href="#mekan"><small>vi.</small>Mekân</a>
+    <a href="#rezervasyon"><small>vii.</small>Rezervasyon</a>
+    <a href="#iletisim"><small>—</small>İletişim</a>
+  </nav>
+  <p class="mnav__foot"><span>Moda · Kadıköy</span><a href="{{base}}kafe/">Kafe şablonuna geç →</a></p>
+</div>
+
+<main id="icerik">
+
+  <section class="hero" data-tone="dark">
+    <picture class="hero__media" data-hero-media>
+      <source media="(max-width: 760px)" data-pic="lodos/hero-grill" sizes="100vw">
+      <img data-pic="lodos/hero-still" alt="Karanlık ahşap masada taze çipuralar, limon, sarımsak ve maydanoz" sizes="100vw" loading="eager" fetchpriority="high">
+    </picture>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <svg class="wind" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-40 170C260 120 470 210 800 150S1260 90 1500 130" pathLength="1"/>
+      <path d="M-40 300C300 260 560 330 900 280S1300 230 1500 270" pathLength="1"/>
+      <path d="M-40 430C240 400 520 470 860 420S1290 370 1500 410" pathLength="1"/>
+    </svg>
+    <div class="hero__inner wrap">
+      <p class="eyebrow hero__eyebrow"><span>Moda — Kadıköy</span><span>Meze · deniz · ateş</span></p>
+      <h1 class="hero__title" data-hero-title>
+        <span>Rüzgâr güneybatıdan,</span>
+        <span>balık pazardan,</span>
+        <span>akşam <em>bizden.</em></span>
+      </h1>
+      <div class="hero__foot">
+        <p class="hero__lead">Lodos çıkınca tekneler limanda kalır; biz de mutfağa çekiliriz. Kadıköy pazarından o sabah ne geldiyse, akşam ateşte ve masada.</p>
+        <div class="hero__actions">
+          <a class="btn btn--accent" href="#rezervasyon" data-magnetic><span>Masa ayırt</span></a>
+          <a class="btn btn--ghost" href="#menu"><span>Menüyü gör</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="ticker" aria-label="Bugün tezgâhta: lüfer, palamut, hamsi, istavrit, Saros karidesi, ayva, bal kabağı">
+      <div class="ticker__track" aria-hidden="true">
+        <span class="ticker__label">Bugün tezgâhta</span><span>Lüfer</span><span>Palamut</span><span>Hamsi</span><span>İstavrit</span><span>Saros karidesi</span><span>Ayva</span><span>Bal kabağı</span><span>Pırasa</span>
+        <span class="ticker__label">Bugün tezgâhta</span><span>Lüfer</span><span>Palamut</span><span>Hamsi</span><span>İstavrit</span><span>Saros karidesi</span><span>Ayva</span><span>Bal kabağı</span><span>Pırasa</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="story section" id="hikaye" data-tone="dark">
+    <div class="wrap story__grid">
+      <header class="shead">
+        <span class="numeral">i.</span><span class="eyebrow">Hikâye</span>
+      </header>
+      <p class="story__big" data-words>Menü her sabah iskelede yeniden yazılır. Tezgâhta ne gördüysek, akşamın menüsü o.</p>
+      <div class="story__text">
+        <p>Lodos, Moda'nın arka sokaklarında yirmi iki kişilik tek bir masa olarak başladı. Pek büyümedik: on dört masa, bir kömür ocağı, uzun bir mermer tezgâh.</p>
+        <p>Her sabah yedide Kadıköy balık pazarındayız. Bu yüzden menünün altında tarih yazar ve bazı akşamlar bazı tabaklar erkenden biter. Bitince biter; dondurucumuz yok.</p>
+        <dl class="facts">
+          <div><dt>07.00</dt><dd>Pazara indiğimiz saat</dd></div>
+          <div><dt>14</dt><dd>Masa, on dördü de rezervasyonla</dd></div>
+          <div><dt>1</dt><dd>Meşe kömürü ocağı; hiç sönmez</dd></div>
+        </dl>
+      </div>
+      <figure class="story__fig story__fig--a">
+        <div class="frame" data-reveal><img data-pic="lodos/market-torik" alt="Balık tezgâhında, el yazısıyla 'Boğaz torik' yazan etiket" sizes="(min-width: 900px) 26vw, 64vw" data-speed="0.6"></div>
+        <figcaption>Kadıköy pazarı, 07.20 — Boğaz toriği.</figcaption>
+      </figure>
+      <figure class="story__fig story__fig--b">
+        <div class="frame" data-reveal><img data-pic="lodos/market-mackerel" alt="Buz üzerinde yan yana dizilmiş parlak uskumrular" sizes="(min-width: 900px) 38vw, 90vw"></div>
+        <figcaption>Uskumru, istavrit, hamsi: kasımın balıkları.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sig" id="imzalar" data-hscroll data-tone="dark">
+    <div class="sig__pin">
+      <div class="sig__intro wrap">
+        <header class="shead"><span class="numeral">ii.</span><span class="eyebrow">Akşamın imzaları</span></header>
+        <h2 class="display-l" data-split>Masaların en çok <em>sorduğu</em> beş tabak.</h2>
+        <p class="sig__hint" aria-hidden="true"><span>Kaydırın</span><i></i></p>
+      </div>
+      <div class="sig__track" data-hscroll-track>
+        <article class="sigcard">
+          <div class="sigcard__media"><img data-pic="lodos/d-octopus" alt="Roka ve limonla servis edilen ızgara ahtapot" sizes="(min-width: 900px) 30vw, 78vw"></div>
+          <div class="sigcard__body"><span class="sigcard__no">01</span><h3 class="sigcard__name">Izgara ahtapot, <em>fava</em></h3><p>Ahtapot kolu, sarı fava, kapari, kırmızı soğan turşusu. Kömürde, acele etmeden.</p><span class="sigcard__price">920 ₺</span></div>
+        </article>
+        <article class="sigcard">
+          <div class="sigcard__media"><img data-pic="lodos/d-lamb-shank" alt="Koyu tabakta, sebzelerle servis edilen kuzu incik" sizes="(min-width: 900px) 30vw, 78vw"></div>
+          <div class="sigcard__body"><span class="sigcard__no">02</span><h3 class="sigcard__name">Kuzu incik, <em>keşkek</em></h3><p>Altı saat kısık ateş, aşurelik buğday, kekikli et suyu. Kaşıkla ayrılır.</p><span class="sigcard__price">1.150 ₺</span></div>
+        </article>
+        <article class="sigcard">
+          <div class="sigcard__media"><img data-pic="lodos/d-eggplant" alt="Közde kabuğu kararmış patlıcanlar" sizes="(min-width: 900px) 30vw, 78vw"></div>
+          <div class="sigcard__body"><span class="sigcard__no">03</span><h3 class="sigcard__name">Közlenmiş patlıcan, <em>tahin</em></h3><p>Kabuğu kömürde kararana kadar. Nar ekşisi, kavrulmuş susam, bolca maydanoz.</p><span class="sigcard__price">290 ₺</span></div>
+        </article>
+        <article class="sigcard">
+          <div class="sigcard__media"><img data-pic="lodos/d-pumpkin" alt="Karanlık zeminde dilimlenmiş bal kabağı" sizes="(min-width: 900px) 30vw, 78vw"></div>
+          <div class="sigcard__body"><span class="sigcard__no">04</span><h3 class="sigcard__name">Bal kabağı, <em>tulum</em></h3><p>Közde bal kabağı, Erzincan tulumu, kavrulmuş fındık ve kızarmış adaçayı.</p><span class="sigcard__price">420 ₺</span></div>
+        </article>
+        <article class="sigcard">
+          <div class="sigcard__media"><img data-pic="lodos/d-quince" alt="Tabağın yanında olgun sarı ayvalar" sizes="(min-width: 900px) 30vw, 78vw"></div>
+          <div class="sigcard__body"><span class="sigcard__no">05</span><h3 class="sigcard__name">Ayva tatlısı, <em>kaymak</em></h3><p>Karanfille fırınlanmış ayva, Afyon kaymağı, Antep fıstığı. Yalnızca sonbaharda.</p><span class="sigcard__price">420 ₺</span></div>
+        </article>
+        <a class="sigcard sigcard--end" href="#menu">
+          <span class="sigcard__no">06 — {{count}}</span>
+          <span class="sigcard__endtitle">Menünün <em>tamamı</em></span>
+          <span class="sigcard__arrow" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 38 38 10M16 10h22v22"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="fire" id="ates" data-tone="dark">
+    <div class="fire__bg" aria-hidden="true"><img data-pic="lodos/embers" alt="" sizes="100vw" data-zoom></div>
+    <div class="wrap fire__inner">
+      <header class="shead"><span class="numeral">iii.</span><span class="eyebrow">Ateş</span></header>
+      <h2 class="fire__title" data-split>Ocak <em>19.30'da</em> kızarır.</h2>
+      <div class="fire__cols">
+        <p class="fire__text">Kömürümüz meşe, ızgaramız dökme demir. Balık, ahtapot, kuzu; hepsi aynı ocağın başından geçer. Ateşi aceleye getirmeyiz, o yüzden bazı tabaklar biraz bekletir. Beklediğinize değsin diye.</p>
+        <figure class="fire__fig">
+          <div class="frame" data-reveal><img data-pic="lodos/octo-grill" alt="Kızgın kömür üzerinde ızgarada pişen ahtapot" sizes="(min-width: 900px) 26vw, 70vw"></div>
+          <figcaption>Ahtapot, ikinci çevirişte.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu" data-menu data-tone="light" aria-labelledby="menu-title">
+    <div class="menu__bg" aria-hidden="true"></div>
+    <div class="menu__inner">
+      <header class="menu__head wrap">
+        <div class="menu__titles">
+          <header class="shead"><span class="numeral">iv.</span><span class="eyebrow">Menü</span></header>
+          <h2 class="display-l" id="menu-title"><span data-en="The autumn menu">Sonbahar menüsü</span></h2>
+        </div>
+        <div class="menu__meta">
+          <p class="mono"><span data-en="November 2026 · last updated 2 Nov, 11.40">Kasım 2026 · son güncelleme 2 Kasım, 11.40</span></p>
+          <p class="menu__legal" data-en="Prices are in Turkish lira and include VAT. No service, cover or table charge. Calories are per portion; allergens are listed under every dish.">Fiyatlarımız Türk lirası cinsindendir ve KDV dahildir. Servis, kuver ya da masa ücreti alınmaz. Kalori değerleri porsiyon başınadır; alerjenler her tabağın altında yazar.</p>
+        </div>
+      </header>
+
+      <div class="menubar" data-menubar>
+        <div class="menubar__inner wrap">
+          <nav class="menubar__cats" aria-label="Menü bölümleri" data-cats>{{cats_nav}}<span class="menubar__ink" aria-hidden="true"></span></nav>
+          <div class="menubar__tools">
+            <button class="tool" type="button" aria-expanded="false" aria-controls="filters" data-filter-toggle><span data-en="Filter">Filtre</span><b data-filter-count hidden></b></button>
+            <div class="lang" role="group" aria-label="Menü dili / Menu language">
+              <button type="button" aria-pressed="true" data-lang="tr">TR</button><button type="button" aria-pressed="false" data-lang="en">EN</button>
+            </div>
+          </div>
+        </div>
+        <div class="filters" id="filters" data-filters hidden>
+          <div class="filters__inner wrap">
+            <fieldset>
+              <legend data-en="Diet">Beslenme</legend>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:v" data-en="Vegetarian">Vejetaryen</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:vg" data-en="Vegan">Vegan</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:gf" data-en="Gluten-free">Glutensiz</button>
+            </fieldset>
+            <fieldset>
+              <legend data-en="Leave out">İçermesin</legend>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:milk" data-en="Dairy">Süt ürünü</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:sea" data-en="Shellfish">Kabuklu ve yumuşakça</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:nuts" data-en="Nuts">Kuruyemiş</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:sesame" data-en="Sesame">Susam</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:fish" data-en="Fish">Balık</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:egg" data-en="Egg">Yumurta</button>
+            </fieldset>
+            <div class="filters__foot">
+              <p class="filters__count" data-count aria-live="polite"></p>
+              <button type="button" class="link" data-filter-clear data-en="Clear">Temizle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__body wrap" data-menu-body>
+        {{menu}}
+        <p class="menu__empty" data-empty hidden data-en="No dish matches these filters. Ask us; the kitchen can often adapt a plate.">Bu filtrelere uyan tabak yok. Bize sorun; mutfak çoğu tabağı uyarlayabiliyor.</p>
+        <aside class="legend" aria-labelledby="legend-title">
+          <h3 class="legend__title" id="legend-title"><span data-en="Allergens">Alerjenler</span> <small data-en="Numbered per the Turkish Food Codex list">Türk Gıda Kodeksi listesindeki sırayla</small></h3>
+          {{legend}}
+          <p class="legend__note" data-en="Allergen information is declared by our kitchen. Trace amounts can't be ruled out in a shared kitchen; please tell your server about any allergy.">Alerjen bilgisi mutfağımızın beyanıdır. Ortak mutfakta eser miktar bulaşma tamamen engellenemez; alerjiniz varsa lütfen servis ekibine söyleyin.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="evening section" id="aksam" data-tone="dark">
+    <div class="wrap">
+      <header class="shead"><span class="numeral">v.</span><span class="eyebrow">Bir akşam Lodos'ta</span></header>
+      <h2 class="display-l" data-split>Saat saat <em>bir akşam.</em></h2>
+      <ol class="timeline" data-timeline>
+        <li><time>18.00</time><h3>Kapı açılır</h3><p>İlk mezeler tezgâha dizilir; erken gelen seçer.</p></li>
+        <li><time>19.30</time><h3>Ocak kızarır</h3><p>Kömür beyaza dönünce ilk balık ızgaraya iner.</p></li>
+        <li><time>21.00</time><h3>Günün balığı bölünür</h3><p>Bütün balık, masada, herkesin gözü önünde.</p></li>
+        <li><time>23.30</time><h3>Son sipariş</h3><p>Mutfak kapanır; tatlıya ve kahveye hâlâ vakit var.</p></li>
+        <li><time>00.30</time><h3>Işıklar kısılır</h3><p>Cuma ve cumartesi bir saat daha geç.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="place section" id="mekan" data-tone="dark">
+    <div class="wrap">
+      <div class="place__head">
+        <header class="shead"><span class="numeral">vi.</span><span class="eyebrow">Mekân</span></header>
+        <h2 class="display-l" data-split>Taş duvar, loş ışık, <em>uzun masa.</em></h2>
+      </div>
+      <div class="gallery">
+        <figure class="g g--1"><div class="frame" data-reveal><img data-pic="lodos/room-stone" alt="Taş duvarlı, pencereli loş salon ve kurulu masalar" sizes="(min-width: 900px) 58vw, 92vw"></div><figcaption>Ön salon · pencere önü masaları</figcaption></figure>
+        <figure class="g g--2"><div class="frame" data-reveal><img data-pic="lodos/chef-copper" alt="Bakır lambaların altında tabak hazırlayan aşçının elleri" sizes="(min-width: 900px) 30vw, 92vw" data-speed="0.4"></div><figcaption>Açık mutfak · bakır lambaların altı</figcaption></figure>
+        <figure class="g g--3"><div class="frame" data-reveal><img data-pic="lodos/longtable" alt="Gece bahçede mumlarla aydınlatılmış uzun masa" sizes="(min-width: 900px) 40vw, 92vw"></div><figcaption>Arka bahçe · 22 kişilik uzun masa, özel davetlere açık</figcaption></figure>
+        <figure class="g g--4"><div class="frame" data-reveal><img data-pic="lodos/lamps" alt="Karanlıkta sarkan üç sarkıt lamba" sizes="(min-width: 900px) 24vw, 46vw" data-speed="0.8"></div></figure>
+        <figure class="g g--5"><div class="frame" data-reveal><img data-pic="lodos/room-dining" alt="Ahşap masalı, duvar lambalı arka salon" sizes="(min-width: 900px) 34vw, 92vw"></div><figcaption>Arka salon · 18 kişi</figcaption></figure>
+        <figure class="g g--6"><div class="frame" data-reveal><img data-pic="lodos/chef-pour" alt="Servis öncesi tabağa sos dökülürken" sizes="(min-width: 900px) 30vw, 46vw"></div><figcaption>Servisten hemen önce</figcaption></figure>
+      </div>
+      <blockquote class="quote">
+        <p data-words>“Balığı ateşe sormadan tuzlamayız.”</p>
+        <footer>— Lodos mutfağı</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="reserve section" id="rezervasyon" data-tone="dark">
+    <div class="wrap reserve__grid">
+      <div class="reserve__intro">
+        <header class="shead"><span class="numeral">vii.</span><span class="eyebrow">Rezervasyon</span></header>
+        <h2 class="display-l" data-split>Masanızı <em>ayıralım.</em></h2>
+        <p class="lead">Talebinizi bırakın; en geç bir saat içinde arayıp onaylayalım. Masalar 15 dakika tutulur.</p>
+        <ul class="notes">
+          <li>Yedi kişi ve üzeri gruplar için arka salonu kapatabiliriz.</li>
+          <li>Pazartesi kapalıyız; mutfak kapanıştan 30 dakika önce son siparişi alır.</li>
+          <li>Alerjiniz varsa not alanına yazın, mutfağa iletelim.</li>
+        </ul>
+      </div>
+      <form class="rform" data-reserve novalidate>
+        <fieldset class="rform__step">
+          <legend><span>01</span>Gün</legend>
+          <div class="chips chips--days" data-days role="radiogroup" aria-label="Gün seçin"></div>
+        </fieldset>
+        <fieldset class="rform__step">
+          <legend><span>02</span>Saat</legend>
+          <div class="chips" data-times role="radiogroup" aria-label="Saat seçin"><p class="chips__empty">Önce bir gün seçin.</p></div>
+        </fieldset>
+        <fieldset class="rform__step">
+          <legend><span>03</span>Kişi</legend>
+          <div class="stepper">
+            <button type="button" data-step="-1" aria-label="Bir kişi azalt">−</button>
+            <output data-party aria-live="polite">2</output>
+            <button type="button" data-step="1" aria-label="Bir kişi artır">+</button>
+          </div>
+          <p class="rform__hint" data-party-hint></p>
+        </fieldset>
+        <fieldset class="rform__step rform__fields">
+          <legend><span>04</span>İletişim</legend>
+          <label class="field"><span>Ad soyad</span><input name="ad" autocomplete="name" required></label>
+          <label class="field"><span>Telefon</span><input name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="05xx xxx xx xx" required></label>
+          <label class="field field--wide"><span>Not <small>(isteğe bağlı)</small></span><textarea name="not" rows="2" placeholder="Doğum günü, alerji, pencere kenarı…"></textarea></label>
+          <label class="check"><input type="checkbox" name="kvkk" required><span>Rezervasyon talebim için kişisel verilerimin işlenmesine dair <a href="#kvkk" data-kvkk>aydınlatma metnini</a> okudum.</span></label>
+        </fieldset>
+        <div class="rform__foot">
+          <p class="rform__summary" data-summary aria-live="polite">Gün ve saat seçin.</p>
+          <button class="btn btn--accent" type="submit" data-magnetic><span>Talebi gönder</span></button>
+        </div>
+        <p class="rform__error" data-error role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="visit section" id="iletisim" data-tone="dark">
+    <div class="wrap visit__grid">
+      <div class="visit__main">
+        <header class="shead"><span class="numeral">—</span><span class="eyebrow">İletişim</span></header>
+        <h2 class="display-m">Moda'da, iskeleye <em>altı dakika.</em></h2>
+        <address>Caferağa Mahallesi, Moda<br>Kadıköy / İstanbul</address>
+        <p class="visit__phone"><a href="tel:+902160000000">0216 000 00 00</a></p>
+        <p class="visit__ways">Kadıköy iskelesinden 12 dakika yürüyüş · Moda tramvay durağına 3 dakika · Yakında otopark yok, vale de yok.</p>
+        <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Moda%2C%20Kad%C4%B1k%C3%B6y" target="_blank" rel="noopener"><span>Haritada aç</span></a>
+      </div>
+      <div class="visit__hours">
+        <h3 class="eyebrow">Saatler</h3>
+        <table class="hours" data-hours-table>
+          <caption class="sr-only">Haftalık çalışma saatleri</caption>
+          <tbody>{{hours_rows}}</tbody>
+        </table>
+        <p class="visit__note">Mutfak kapanıştan 30 dakika önce son siparişi alır. Resmî tatillerde saatler Instagram'da duyurulur.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" data-tone="dark">
+  <div class="wrap footer__top">
+    <div class="footer__col">
+      <p class="eyebrow">Lodos</p>
+      <p>Bülten yok, kampanya yok.<br>Menü değişince tahtaya yazarız.</p>
+    </div>
+    <nav class="footer__col" aria-label="Alt bağlantılar">
+      <a href="#menu">Menü</a><a href="#rezervasyon">Rezervasyon</a><a href="#kvkk" data-kvkk>KVKK aydınlatma metni</a><a href="#cerez" data-kvkk>Çerez politikası</a>
+    </nav>
+    <p class="footer__col footer__demo">Bu sayfa bir restoran web sitesi şablonudur. Lodos kurgusal bir işletmedir; fiyatlar ve saatler örnektir. Fotoğraflar Unsplash lisansıyla kullanılmıştır.</p>
+  </div>
+  <p class="footer__word" aria-hidden="true" data-footer-word><span>L</span><span>o</span><span>d</span><span>o</span><span>s</span></p>
+  <div class="wrap footer__bottom"><span>© <span data-year>2026</span> Lodos</span><span>Moda — Kadıköy — İstanbul</span></div>
+</footer>
+
+<nav class="switch" aria-label="Şablon seçimi" data-switch>
+  <span class="switch__label">Şablon</span>
+  <a href="./" aria-current="page">Restoran</a>
+  <a href="{{base}}kafe/">Kafe</a>
+</nav>
+
+<div class="tablebar" data-tablebar hidden>
+  <p class="tablebar__no"><span data-en="Table">Masa</span> <b data-table-no></b></p>
+  <button type="button" class="tablebar__btn" data-wifi><span data-en="Wi-Fi password">Wi-Fi şifresi</span></button>
+  <a class="tablebar__btn" href="#menu" data-en="Menu">Menü</a>
+</div>
+
+<div class="preview" data-preview aria-hidden="true"><img alt=""></div>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<dialog class="sheet" data-sheet aria-labelledby="sheet-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <figure class="sheet__media" data-sheet-media><img data-sheet-img alt=""></figure>
+    <div class="sheet__body">
+      <p class="sheet__cat mono" data-sheet-cat></p>
+      <h3 class="sheet__title" id="sheet-title" data-sheet-title></h3>
+      <p class="sheet__price" data-sheet-price></p>
+      <h4 class="sheet__label" data-en="Ingredients">İçindekiler</h4>
+      <p class="sheet__desc" data-sheet-desc></p>
+      <div class="sheet__facts">
+        <div><h4 class="sheet__label" data-en="Energy">Enerji</h4><p data-sheet-kcal></p></div>
+        <div><h4 class="sheet__label" data-en="Allergens">Alerjenler</h4><ul class="sheet__als" data-sheet-al></ul></div>
+      </div>
+      <p class="sheet__tags" data-sheet-tags></p>
+      <p class="sheet__note" data-en="Have an allergy? Tell your server before ordering.">Alerjiniz varsa sipariş öncesi servis ekibine söyleyin.</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="sheet sheet--center" data-confirm aria-labelledby="confirm-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <div class="sheet__body">
+      <p class="eyebrow">Talebiniz hazır</p>
+      <h3 class="sheet__title" id="confirm-title">Bu mesaj işletmeye iletilecek</h3>
+      <pre class="confirm__msg" data-confirm-text></pre>
+      <div class="confirm__actions">
+        <button class="btn btn--accent" type="button" data-copy><span>Mesajı kopyala</span></button>
+        <button class="btn btn--line" type="button" data-close><span>Düzenle</span></button>
+      </div>
+      <p class="sheet__note">Şablon notu: gerçek sitede bu talep tek dokunuşla işletmenin WhatsApp hattına ya da e-postasına düşer; misafir bilgisi sunucuda tutulmaz.</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="sheet sheet--center" data-kvkk-dialog aria-labelledby="kvkk-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <div class="sheet__body prose">
+      <p class="eyebrow">Şablon metni</p>
+      <h3 class="sheet__title" id="kvkk-title">Aydınlatma metni</h3>
+      <p>Bu alan, işletmenin 6698 sayılı KVKK kapsamındaki aydınlatma metni içindir. Rezervasyon formunda yalnızca ad, telefon ve isteğe bağlı not alınır; bu bilgiler talebin karşılanması amacıyla işletmeye iletilir ve sitede saklanmaz.</p>
+      <p>Site çerez kullanmaz; ziyaret istatistikleri çerezsiz ve kişiyi tanımlamayan biçimde tutulur. Yazı tipleri ve görseller sitenin kendi sunucusundan yüklenir.</p>
+      <p>Gerçek sitede bu metin, işletmenin unvanı, iletişim bilgileri ve başvuru yollarıyla birlikte hukuk danışmanı onayıyla yayımlanır.</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="{{base}}assets/vendor/gsap.min.js" defer></script>
+<script src="{{base}}assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="{{base}}assets/vendor/SplitText.min.js" defer></script>
+<script src="{{base}}assets/vendor/lenis.min.js" defer></script>
+<script src="{{base}}assets/js/main.js" defer></script>
+</body>
+</html>

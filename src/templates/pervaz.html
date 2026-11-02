@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="tr" data-brand="pervaz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pervaz — Kahve, fırın, kahvaltı · Yeldeğirmeni</title>
+<meta name="description" content="Yeldeğirmeni'nde iki büyük pencereli bir köşe: ekşi maya, kruvasan, kumda Türk kahvesi ve yanık cheesecake. Canlı fırın saatleri ve dijital menü içeren kafe şablonu.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f3ece0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pervaz — Kahve, fırın, kahvaltı">
+<meta property="og:description" content="Kafe web sitesi şablonu: canlı fırın saatleri, kahve defteri, dijital menü, hafta sonu rezervasyonu.">
+<meta property="og:image" content="{{site}}assets/img/pervaz/hero-window-1600.webp">
+<meta property="og:url" content="{{url}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23f3ece0'/%3E%3Cpath d='M10 34V18a10 10 0 0 1 20 0v16z' fill='none' stroke='%232a2019' stroke-width='2.4'/%3E%3Cpath d='M20 8v26M10 24h20' stroke='%23c97d2a' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preload" href="{{base}}assets/fonts/fraunces-normal-100_900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{base}}assets/fonts/hanken-grotesk-normal-100_900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{base}}assets/fonts/fonts.css">
+<link rel="stylesheet" href="{{base}}assets/css/main.css">
+<script>(function(d){var h=d.documentElement;h.classList.add('js');try{var q=new URLSearchParams(location.search).has('masa'),s=sessionStorage.getItem('intro-pervaz'),r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!q&&!s&&!r)h.classList.add('intro');if(q)h.classList.add('is-table')}catch(e){}})(document)</script>
+<script type="application/ld+json">{{jsonld}}</script>
+<script type="application/json" id="config">{{config}}</script>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+
+<div class="sunlight" aria-hidden="true" data-sunlight>
+  <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+    <defs><path id="leaf" d="M0 0C18-26 58-30 86-4 58 22 18 24 0 0Z"/></defs>
+    <g class="sunlight__frame">
+      <rect x="140" y="-200" width="46" height="1400"/>
+      <rect x="500" y="-200" width="38" height="1400"/>
+      <rect x="860" y="-200" width="46" height="1400"/>
+      <rect x="-200" y="420" width="1400" height="34"/>
+    </g>
+    <g class="sunlight__leaves">
+      <path class="stem" d="M1080 60C960 120 880 210 780 330 720 400 690 470 660 560" fill="none" stroke-width="7"/>
+      <use href="#leaf" transform="translate(1000 96) rotate(150) scale(1.3)"/>
+      <use href="#leaf" transform="translate(960 120) rotate(40) scale(1.2)"/>
+      <use href="#leaf" transform="translate(900 168) rotate(170) scale(1.4)"/>
+      <use href="#leaf" transform="translate(870 200) rotate(20) scale(1.1)"/>
+      <use href="#leaf" transform="translate(820 270) rotate(190) scale(1.3)"/>
+      <use href="#leaf" transform="translate(790 312) rotate(-10) scale(1.2)"/>
+      <use href="#leaf" transform="translate(740 380) rotate(160) scale(1.25)"/>
+      <use href="#leaf" transform="translate(712 430) rotate(10) scale(1)"/>
+      <use href="#leaf" transform="translate(684 500) rotate(200) scale(1.15)"/>
+      <use href="#leaf" transform="translate(668 548) rotate(30) scale(.9)"/>
+    </g>
+  </svg>
+</div>
+
+<div class="loader" data-loader aria-hidden="true">
+  <div class="loader__inner">
+    <svg class="loader__window" viewBox="0 0 120 150">
+      <defs><clipPath id="archclip"><path d="M10 144V58a50 50 0 0 1 100 0v86z"/></clipPath></defs>
+      <g clip-path="url(#archclip)"><rect class="loader__sun" x="10" y="8" width="100" height="136"/></g>
+      <path class="loader__arch" d="M10 144V58a50 50 0 0 1 100 0v86z" pathLength="1"/>
+      <path class="loader__cross" d="M60 8v136M10 86h100" pathLength="1"/>
+    </svg>
+    <p class="loader__word">Pervaz</p>
+    <p class="loader__meta">Kahve · fırın · kahvaltı</p>
+  </div>
+</div>
+
+<header class="header" data-header>
+  <a class="brand" href="./" aria-label="Pervaz, ana sayfa">
+    <svg class="brand__mark" viewBox="0 0 32 40" aria-hidden="true"><path d="M3 38V16a13 13 0 0 1 26 0v22z"/><path class="brand__cross" d="M16 3v35M3 23h26"/></svg>
+    <span class="brand__word">Pervaz</span>
+  </a>
+  <nav class="nav" aria-label="Ana gezinme">
+    <a href="#firin">Fırın</a>
+    <a href="#kahve">Kahve</a>
+    <a href="#menu">Menü</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <div class="header__end">
+    <p class="status" data-status><i aria-hidden="true"></i><span data-status-text>Saatler</span></p>
+    <a class="btn btn--solid btn--small" href="#rezervasyon" data-magnetic><span>Yer ayırt</span></a>
+    <button class="burger" type="button" aria-label="Gezinme menüsünü aç" aria-expanded="false" aria-controls="mnav" data-nav-toggle><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" data-mobile-nav hidden>
+  <nav class="mnav__links" aria-label="Mobil gezinme">
+    <a href="#firin"><small>01</small>Fırın saatleri</a>
+    <a href="#hikaye"><small>02</small>Hikâye</a>
+    <a href="#kahve"><small>03</small>Kahve defteri</a>
+    <a href="#menu"><small>04</small>Menü</a>
+    <a href="#rezervasyon"><small>05</small>Yer ayırt</a>
+    <a href="#iletisim"><small>06</small>İletişim</a>
+  </nav>
+  <p class="mnav__foot"><span>Yeldeğirmeni · Kadıköy</span><a href="{{base}}">Restoran şablonuna geç →</a></p>
+</div>
+
+<main id="icerik">
+
+  <section class="phero" data-tone="light">
+    <div class="wrap phero__grid">
+      <div class="phero__text">
+        <p class="eyebrow phero__greet" data-greeting>Yeldeğirmeni — Kadıköy</p>
+        <h1 class="phero__title" data-hero-title>
+          <span>Işık pervaza</span>
+          <span>düşünce ilk tepsi</span>
+          <span>fırından <em>çıkar.</em></span>
+        </h1>
+        <p class="phero__lead">Yeldeğirmeni'nde iki büyük pencereli bir köşe. Sabah yedide ekşi maya, sekizde kruvasan, öğleden sonra yanık cheesecake. Arada iyi kahve.</p>
+        <div class="phero__actions">
+          <a class="btn btn--solid" href="#menu" data-magnetic><span>Menüye bak</span></a>
+          <a class="btn btn--line" href="#rezervasyon"><span>Hafta sonu yer ayırt</span></a>
+        </div>
+        <ul class="phero__facts">
+          <li><b>08.00–20.00</b><span>Hafta içi</span></li>
+          <li><b>09.00–20.00</b><span>Hafta sonu</span></li>
+          <li><b>14.00</b><span>Kahvaltı son</span></li>
+        </ul>
+      </div>
+      <div class="phero__media">
+        <div class="arch arch--main" data-arch><img data-pic="pervaz/hero-window" alt="Güneşli pencere önünde, masada buharı tüten beyaz fincan" sizes="(min-width: 900px) 38vw, 92vw" loading="eager" fetchpriority="high"></div>
+        <div class="arch arch--small" data-arch><img data-pic="pervaz/hero-shadow" alt="Sarı masada yaprak gölgeleri arasında latte" sizes="(min-width: 900px) 16vw, 40vw" loading="eager" data-speed="0.5"></div>
+        <p class="phero__stamp" aria-hidden="true"><span>Ekşi maya</span><span>her sabah</span><b>07.00</b></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" data-marquee aria-label="Kardamomlu düğüm, ekşi maya, çılbır, V60, kumda Türk kahvesi, San Sebastian, pain au chocolat, tahinli çörek">
+    <div class="marquee__track" aria-hidden="true">
+      <span>Kardamomlu düğüm</span><i></i><span>Ekşi maya</span><i></i><span>Çılbır</span><i></i><span>V60</span><i></i><span>Kumda Türk kahvesi</span><i></i><span>San Sebastian</span><i></i><span>Pain au chocolat</span><i></i><span>Tahinli çörek</span><i></i>
+      <span>Kardamomlu düğüm</span><i></i><span>Ekşi maya</span><i></i><span>Çılbır</span><i></i><span>V60</span><i></i><span>Kumda Türk kahvesi</span><i></i><span>San Sebastian</span><i></i><span>Pain au chocolat</span><i></i><span>Tahinli çörek</span><i></i>
+    </div>
+  </div>
+
+  <section class="bake section" id="firin" data-tone="light">
+    <div class="wrap bake__grid">
+      <div class="bake__intro">
+        <header class="shead"><span class="numeral">01</span><span class="eyebrow">Fırın</span></header>
+        <h2 class="display-l" data-split>Saat yazıyorsa, <em>sözdür.</em></h2>
+        <p class="lead">Her tepsiyi çıkacağı saatten geriye sayarak hazırlarız. Aşağıdaki liste canlı: tepsi fırından çıkınca işaretlenir.</p>
+        <p class="bake__clock mono" data-clock></p>
+      </div>
+      <ol class="bake__list" data-bake-list>
+        <li class="bake__row" data-bake="450" data-img="{{base}}assets/img/pervaz/c-focaccia-480.webp">
+          <time>07.30</time>
+          <div class="bake__what"><h3>Ekşi maya ekmek</h3><p>Günde 24 somun; tam buğday ve çavdarlı.</p></div>
+          <span class="bake__status" data-bake-status>—</span>
+        </li>
+        <li class="bake__row" data-bake="480" data-img="{{base}}assets/img/pervaz/c-croissant-tray-480.webp">
+          <time>08.00</time>
+          <div class="bake__what"><h3>Kruvasan, pain au chocolat</h3><p>Üç gün dinlenen hamur, %82 yağlı tereyağı.</p></div>
+          <span class="bake__status" data-bake-status>—</span>
+        </li>
+        <li class="bake__row" data-bake="630" data-img="{{base}}assets/img/pervaz/c-cardamom-480.webp">
+          <time>10.30</time>
+          <div class="bake__what"><h3>Kardamomlu düğüm, tahinli çörek</h3><p>İkinci tepsi 13.00'te.</p></div>
+          <span class="bake__status" data-bake-status>—</span>
+        </li>
+        <li class="bake__row" data-bake="900" data-img="{{base}}assets/img/pervaz/c-sansebastian-480.webp">
+          <time>15.00</time>
+          <div class="bake__what"><h3>San Sebastian</h3><p>Ilık dilimler; bütün kek için bir gün önceden haber verin.</p></div>
+          <span class="bake__status" data-bake-status>—</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="pstory section" id="hikaye" data-tone="light">
+    <div class="wrap pstory__grid">
+      <figure class="pstory__fig pstory__fig--a">
+        <div class="frame frame--round" data-reveal><img data-pic="pervaz/interior-warm" alt="Öğleden sonra güneşi vuran, bitkili ve ahşap masalı kafe salonu" sizes="(min-width: 900px) 52vw, 92vw"></div>
+        <figcaption>Öğleden sonra dört; güneş tezgâhın üstünde.</figcaption>
+      </figure>
+      <div class="pstory__text">
+        <header class="shead"><span class="numeral">02</span><span class="eyebrow">Hikâye</span></header>
+        <h2 class="display-m" data-split>Eski bir matbaadan <em>iki pencere</em> bıraktık.</h2>
+        <p>Pervaz, Yeldeğirmeni'nde eskiden matbaa olan bir köşede açıldı. Duvarları söktük, iki pencereyi büyüttük, dibine bir taş fırın koyduk. Sabahları güneş tezgâha vurur; bütün masalar bu yüzden pencereye bakar.</p>
+        <p>Mahalle fırını gibi çalışırız: erken açılır, erken kapanırız. Biten tepsinin yenisi aynı gün gelmez, ertesi sabah gelir.</p>
+        <dl class="facts facts--light">
+          <div><dt>07.00</dt><dd>Fırının yandığı saat</dd></div>
+          <div><dt>11</dt><dd>Masa, hepsi pencereye dönük</dd></div>
+          <div><dt>24</dt><dd>Her sabah çıkan somun</dd></div>
+        </dl>
+      </div>
+      <figure class="pstory__fig pstory__fig--b">
+        <div class="arch arch--story" data-reveal><img data-pic="pervaz/window-seat" alt="Pencere önündeki tezgâh ve bitkiler" sizes="(min-width: 900px) 24vw, 60vw" data-speed="0.5"></div>
+      </figure>
+      <figure class="pstory__fig pstory__fig--c">
+        <div class="frame frame--round" data-reveal><img data-pic="pervaz/barista-hands" alt="İki elle tutulan, köpüğünde latte sanatı olan fincan" sizes="(min-width: 900px) 22vw, 60vw"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="beans section" id="kahve" data-tone="dark">
+    <div class="wrap">
+      <div class="beans__head">
+        <header class="shead"><span class="numeral">03</span><span class="eyebrow">Kahve</span></header>
+        <h2 class="display-l" data-split>Kahve <em>defteri.</em></h2>
+        <p class="lead">Çekirdeklerimizi iki haftada bir, İstanbul'daki küçük bir kavurucudan taze alırız. Bu ay üç çekirdek var; tadım notları kavurucunun değil, bizim.</p>
+      </div>
+      <div class="beans__grid">
+        <article class="bean">
+          <p class="bean__use mono">Espresso ve sütlüler</p>
+          <h3 class="bean__name">Ev harmanı</h3>
+          <p class="bean__origin">Brezilya Cerrado %60 · Etiyopya Sidamo %40</p>
+          <p class="bean__notes">Bitter çikolata, fındık, kuru üzüm</p>
+          <dl class="bars" data-bars>
+            <div style="--v:2"><dt>Asidite</dt><dd><span></span></dd></div>
+            <div style="--v:4"><dt>Gövde</dt><dd><span></span></dd></div>
+            <div style="--v:4"><dt>Tatlılık</dt><dd><span></span></dd></div>
+          </dl>
+        </article>
+        <article class="bean">
+          <p class="bean__use mono">V60</p>
+          <h3 class="bean__name">Etiyopya Guji</h3>
+          <p class="bean__origin">Yıkanmış · 2.100 m</p>
+          <p class="bean__notes">Bergamot, şeftali, yasemin</p>
+          <dl class="bars" data-bars>
+            <div style="--v:4"><dt>Asidite</dt><dd><span></span></dd></div>
+            <div style="--v:2"><dt>Gövde</dt><dd><span></span></dd></div>
+            <div style="--v:3"><dt>Tatlılık</dt><dd><span></span></dd></div>
+          </dl>
+        </article>
+        <article class="bean">
+          <p class="bean__use mono">Filtre ve cold brew</p>
+          <h3 class="bean__name">Kolombiya Huila</h3>
+          <p class="bean__origin">Honey · 1.800 m</p>
+          <p class="bean__notes">Karamel, kırmızı elma, kakao</p>
+          <dl class="bars" data-bars>
+            <div style="--v:3"><dt>Asidite</dt><dd><span></span></dd></div>
+            <div style="--v:3"><dt>Gövde</dt><dd><span></span></dd></div>
+            <div style="--v:4"><dt>Tatlılık</dt><dd><span></span></dd></div>
+          </dl>
+        </article>
+      </div>
+      <div class="brews">
+        <figure class="brew">
+          <div class="frame frame--round" data-reveal><img data-pic="pervaz/c-v60" alt="Yukarıdan bakışla V60 filtrede demlenen kahve" sizes="(min-width: 900px) 36vw, 92vw"></div>
+          <figcaption><b>V60</b> 15 gram çekirdek, 250 ml su, üç buçuk dakika.</figcaption>
+        </figure>
+        <figure class="brew brew--b">
+          <div class="frame frame--round" data-reveal><img data-pic="pervaz/c-cezve" alt="Kızgın kum içinde bakır cezvede pişen Türk kahvesi" sizes="(min-width: 900px) 30vw, 92vw" data-speed="0.4"></div>
+          <figcaption><b>Kumda Türk kahvesi</b> Bakır cezve, 90 derecelik kum, köpüğü taşırmadan.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu menu--cafe" id="menu" data-menu data-tone="light" aria-labelledby="menu-title">
+    <div class="menu__bg" aria-hidden="true"></div>
+    <div class="menu__inner">
+      <header class="menu__head wrap">
+        <div class="menu__titles">
+          <header class="shead"><span class="numeral">04</span><span class="eyebrow">Menü</span></header>
+          <h2 class="display-l" id="menu-title"><span data-en="On the counter today">Tezgâhta bugün</span></h2>
+        </div>
+        <div class="menu__meta">
+          <p class="mono"><span data-en="November 2026 · last updated 2 Nov, 07.15">Kasım 2026 · son güncelleme 2 Kasım, 07.15</span></p>
+          <p class="menu__legal" data-en="Prices are in Turkish lira and include VAT. No service or table charge. Calories are per portion; allergens are listed under every item.">Fiyatlarımız Türk lirası cinsindendir ve KDV dahildir. Servis ya da masa ücreti alınmaz. Kalori değerleri porsiyon başınadır; alerjenler her ürünün altında yazar.</p>
+        </div>
+      </header>
+
+      <div class="menubar" data-menubar>
+        <div class="menubar__inner wrap">
+          <nav class="menubar__cats" aria-label="Menü bölümleri" data-cats>{{cats_nav}}<span class="menubar__ink" aria-hidden="true"></span></nav>
+          <div class="menubar__tools">
+            <button class="tool" type="button" aria-expanded="false" aria-controls="filters" data-filter-toggle><span data-en="Filter">Filtre</span><b data-filter-count hidden></b></button>
+            <div class="lang" role="group" aria-label="Menü dili / Menu language">
+              <button type="button" aria-pressed="true" data-lang="tr">TR</button><button type="button" aria-pressed="false" data-lang="en">EN</button>
+            </div>
+          </div>
+        </div>
+        <div class="filters" id="filters" data-filters hidden>
+          <div class="filters__inner wrap">
+            <fieldset>
+              <legend data-en="Diet">Beslenme</legend>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:v" data-en="Vegetarian">Vejetaryen</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:vg" data-en="Vegan">Vegan</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="diet:gf" data-en="Gluten-free">Glutensiz</button>
+            </fieldset>
+            <fieldset>
+              <legend data-en="Leave out">İçermesin</legend>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:milk" data-en="Dairy">Süt ürünü</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:egg" data-en="Egg">Yumurta</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:nuts" data-en="Nuts">Kuruyemiş</button>
+              <button type="button" class="fchip" aria-pressed="false" data-filter="ex:sesame" data-en="Sesame">Susam</button>
+            </fieldset>
+            <div class="filters__foot">
+              <p class="filters__count" data-count aria-live="polite"></p>
+              <button type="button" class="link" data-filter-clear data-en="Clear">Temizle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__body wrap" data-menu-body>
+        {{menu}}
+        <p class="menu__empty" data-empty hidden data-en="Nothing matches these filters. Ask at the counter; we can often adapt.">Bu filtrelere uyan ürün yok. Tezgâhta sorun; çoğu zaman uyarlayabiliyoruz.</p>
+        <aside class="legend" aria-labelledby="legend-title">
+          <h3 class="legend__title" id="legend-title"><span data-en="Allergens">Alerjenler</span> <small data-en="Numbered per the Turkish Food Codex list">Türk Gıda Kodeksi listesindeki sırayla</small></h3>
+          {{legend}}
+          <p class="legend__note" data-en="Allergen information is declared by our kitchen. Our bakery handles flour, nuts and sesame every day, so traces can't be ruled out.">Alerjen bilgisi mutfağımızın beyanıdır. Fırınımızda her gün un, kuruyemiş ve susam kullanıldığı için eser miktar bulaşma tamamen engellenemez.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="reserve reserve--cafe section" id="rezervasyon" data-tone="light">
+    <div class="wrap reserve__grid">
+      <div class="reserve__intro">
+        <header class="shead"><span class="numeral">05</span><span class="eyebrow">Yer ayırt</span></header>
+        <h2 class="display-l" data-split>Hafta sonu <em>kahvaltısı</em> için yer ayıralım.</h2>
+        <p class="lead">Cumartesi ve pazar 09.00–13.30 arası rezervasyon alıyoruz. Hafta içi sıra yok; gelin, oturun.</p>
+        <ul class="notes">
+          <li>Masalar 15 dakika tutulur; geç kalacaksanız bir mesaj yeter.</li>
+          <li>Bütün kek siparişleri 24 saat önceden; kutusuyla teslim ederiz.</li>
+          <li>Glutensiz ya da vegan bir isteğiniz varsa not alanına yazın.</li>
+        </ul>
+        <figure class="reserve__fig"><div class="arch arch--story" data-reveal><img data-pic="pervaz/bun-window" alt="Pencere kenarında kuşburnu dalı, tarçınlı çörek ve kahve" sizes="(min-width: 900px) 22vw, 60vw"></div></figure>
+      </div>
+      <form class="rform" data-reserve novalidate>
+        <div class="rtabs" role="tablist" aria-label="Talep türü">
+          <button type="button" role="tab" aria-selected="true" data-rmode="table">Masa</button>
+          <button type="button" role="tab" aria-selected="false" data-rmode="cake">Bütün kek</button>
+        </div>
+        <fieldset class="rform__step" data-only="cake" hidden>
+          <legend><span>00</span>Ürün</legend>
+          <div class="chips" data-products role="radiogroup" aria-label="Ürün seçin">
+            <button type="button" class="chip" role="radio" aria-checked="true" data-product="San Sebastian (8–10 dilim)">San Sebastian<small>1.850 ₺</small></button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-product="Ayva-tahin tart (8 dilim)">Ayva-tahin tart<small>1.600 ₺</small></button>
+            <button type="button" class="chip" role="radio" aria-checked="false" data-product="Kardamomlu düğüm, 6'lı kutu">Düğüm, 6'lı kutu<small>860 ₺</small></button>
+          </div>
+        </fieldset>
+        <fieldset class="rform__step">
+          <legend><span>01</span><b data-mode-label="Gün|Teslim günü">Gün</b></legend>
+          <div class="chips chips--days" data-days role="radiogroup" aria-label="Gün seçin"></div>
+        </fieldset>
+        <fieldset class="rform__step">
+          <legend><span>02</span><b data-mode-label="Saat|Teslim saati">Saat</b></legend>
+          <div class="chips" data-times role="radiogroup" aria-label="Saat seçin"><p class="chips__empty">Önce bir gün seçin.</p></div>
+        </fieldset>
+        <fieldset class="rform__step">
+          <legend><span>03</span><b data-mode-label="Kişi|Adet">Kişi</b></legend>
+          <div class="stepper">
+            <button type="button" data-step="-1" aria-label="Azalt">−</button>
+            <output data-party aria-live="polite">2</output>
+            <button type="button" data-step="1" aria-label="Artır">+</button>
+          </div>
+          <p class="rform__hint" data-party-hint></p>
+        </fieldset>
+        <fieldset class="rform__step rform__fields">
+          <legend><span>04</span>İletişim</legend>
+          <label class="field"><span>Ad soyad</span><input name="ad" autocomplete="name" required></label>
+          <label class="field"><span>Telefon</span><input name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="05xx xxx xx xx" required></label>
+          <label class="field field--wide"><span>Not <small>(isteğe bağlı)</small></span><textarea name="not" rows="2" placeholder="Bebek sandalyesi, glutensiz istek, pasta yazısı…"></textarea></label>
+          <label class="check"><input type="checkbox" name="kvkk" required><span>Talebim için kişisel verilerimin işlenmesine dair <a href="#kvkk" data-kvkk>aydınlatma metnini</a> okudum.</span></label>
+        </fieldset>
+        <div class="rform__foot">
+          <p class="rform__summary" data-summary aria-live="polite">Gün ve saat seçin.</p>
+          <button class="btn btn--solid" type="submit" data-magnetic><span>Talebi gönder</span></button>
+        </div>
+        <p class="rform__error" data-error role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="visit section" id="iletisim" data-tone="light">
+    <div class="wrap visit__grid">
+      <div class="visit__main">
+        <header class="shead"><span class="numeral">06</span><span class="eyebrow">İletişim</span></header>
+        <h2 class="display-m">Yeldeğirmeni'nde, iskeleye <em>yedi dakika.</em></h2>
+        <address>Rasimpaşa Mahallesi, Yeldeğirmeni<br>Kadıköy / İstanbul</address>
+        <p class="visit__phone"><a href="tel:+902160000000">0216 000 00 00</a></p>
+        <p class="visit__ways">Kadıköy iskelesinden 7 dakika yürüyüş · Bisiklet park yeri kapının önünde · Köpekler bahçede ağırlanır.</p>
+        <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Yelde%C4%9Firmeni%2C%20Kad%C4%B1k%C3%B6y" target="_blank" rel="noopener"><span>Haritada aç</span></a>
+      </div>
+      <div class="visit__hours">
+        <h3 class="eyebrow">Saatler</h3>
+        <table class="hours" data-hours-table>
+          <caption class="sr-only">Haftalık çalışma saatleri</caption>
+          <tbody>{{hours_rows}}</tbody>
+        </table>
+        <p class="visit__note">Kahvaltı her gün 14.00'e kadar. Fırın tepsileri bitince erken kapanabiliriz; Instagram'da yazarız.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" data-tone="light">
+  <div class="wrap footer__top">
+    <div class="footer__col">
+      <p class="eyebrow">Pervaz</p>
+      <p>Kahve · fırın · kahvaltı.<br>Pencereden bakmak ücretsiz.</p>
+    </div>
+    <nav class="footer__col" aria-label="Alt bağlantılar">
+      <a href="#menu">Menü</a><a href="#rezervasyon">Yer ayırt</a><a href="#kvkk" data-kvkk>KVKK aydınlatma metni</a><a href="#cerez" data-kvkk>Çerez politikası</a>
+    </nav>
+    <p class="footer__col footer__demo">Bu sayfa bir kafe web sitesi şablonudur. Pervaz kurgusal bir işletmedir; fiyatlar ve saatler örnektir. Fotoğraflar Unsplash lisansıyla kullanılmıştır.</p>
+  </div>
+  <p class="footer__word" aria-hidden="true" data-footer-word><span>P</span><span>e</span><span>r</span><span>v</span><span>a</span><span>z</span></p>
+  <div class="wrap footer__bottom"><span>© <span data-year>2026</span> Pervaz</span><span>Yeldeğirmeni — Kadıköy — İstanbul</span></div>
+</footer>
+
+<nav class="switch" aria-label="Şablon seçimi" data-switch>
+  <span class="switch__label">Şablon</span>
+  <a href="{{base}}">Restoran</a>
+  <a href="./" aria-current="page">Kafe</a>
+</nav>
+
+<div class="tablebar" data-tablebar hidden>
+  <p class="tablebar__no"><span data-en="Table">Masa</span> <b data-table-no></b></p>
+  <button type="button" class="tablebar__btn" data-wifi><span data-en="Wi-Fi password">Wi-Fi şifresi</span></button>
+  <a class="tablebar__btn" href="#menu" data-en="Menu">Menü</a>
+</div>
+
+<div class="preview" data-preview aria-hidden="true"><img alt=""></div>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<dialog class="sheet" data-sheet aria-labelledby="sheet-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <figure class="sheet__media" data-sheet-media><img data-sheet-img alt=""></figure>
+    <div class="sheet__body">
+      <p class="sheet__cat mono" data-sheet-cat></p>
+      <h3 class="sheet__title" id="sheet-title" data-sheet-title></h3>
+      <p class="sheet__price" data-sheet-price></p>
+      <h4 class="sheet__label" data-en="Ingredients">İçindekiler</h4>
+      <p class="sheet__desc" data-sheet-desc></p>
+      <div class="sheet__facts">
+        <div><h4 class="sheet__label" data-en="Energy">Enerji</h4><p data-sheet-kcal></p></div>
+        <div><h4 class="sheet__label" data-en="Allergens">Alerjenler</h4><ul class="sheet__als" data-sheet-al></ul></div>
+      </div>
+      <p class="sheet__tags" data-sheet-tags></p>
+      <p class="sheet__note" data-en="Have an allergy? Tell us at the counter before ordering.">Alerjiniz varsa sipariş öncesi tezgâhta söyleyin.</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="sheet sheet--center" data-confirm aria-labelledby="confirm-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <div class="sheet__body">
+      <p class="eyebrow">Talebiniz hazır</p>
+      <h3 class="sheet__title" id="confirm-title">Bu mesaj kafeye iletilecek</h3>
+      <pre class="confirm__msg" data-confirm-text></pre>
+      <div class="confirm__actions">
+        <button class="btn btn--solid" type="button" data-copy><span>Mesajı kopyala</span></button>
+        <button class="btn btn--line" type="button" data-close><span>Düzenle</span></button>
+      </div>
+      <p class="sheet__note">Şablon notu: gerçek sitede bu talep tek dokunuşla kafenin WhatsApp hattına ya da e-postasına düşer; misafir bilgisi sunucuda tutulmaz.</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="sheet sheet--center" data-kvkk-dialog aria-labelledby="kvkk-title">
+  <div class="sheet__panel" data-sheet-panel data-lenis-prevent>
+    <button class="sheet__close" type="button" data-close aria-label="Kapat"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+    <div class="sheet__body prose">
+      <p class="eyebrow">Şablon metni</p>
+      <h3 class="sheet__title" id="kvkk-title">Aydınlatma metni</h3>
+      <p>Bu alan, işletmenin 6698 sayılı KVKK kapsamındaki aydınlatma metni içindir. Formda yalnızca ad, telefon ve isteğe bağlı not alınır; bu bilgiler talebin karşılanması amacıyla işletmeye iletilir ve sitede saklanmaz.</p>
+      <p>Site çerez kullanmaz; ziyaret istatistikleri çerezsiz ve kişiyi tanımlamayan biçimde tutulur. Yazı tipleri ve görseller sitenin kendi sunucusundan yüklenir.</p>
+      <p>Gerçek sitede bu metin, işletmenin unvanı, iletişim bilgileri ve başvuru yollarıyla birlikte hukuk danışmanı onayıyla yayımlanır.</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="{{base}}assets/vendor/gsap.min.js" defer></script>
+<script src="{{base}}assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="{{base}}assets/vendor/SplitText.min.js" defer></script>
+<script src="{{base}}assets/vendor/lenis.min.js" defer></script>
+<script src="{{base}}assets/js/main.js" defer></script>
+</body>
+</html>
